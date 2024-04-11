@@ -1,32 +1,28 @@
 import Image from "next/image";
-import homeRender from "../../public/images/the-forge-rendering.png";
 import theForgeLogo from "../../public/logos/the-forge-logo.svg";
-import Link from "next/link";
 import ElevatorLink from "./components/ElevatorLink";
+import HeroImage from "./components/HeroImage";
+import ForgeInfoSection from "./components/ForgeInfoSection";
+import VaultInfoSection from "./components/VaultInfoSection";
+import CollectiveInfoSection from "./components/CollectiveInfoSection";
+import placeholderImage from "../../public/images/placeholder-image.png";
 
 export default function Home() {
   return (
     <main>
       <section className="relative h-svh">
-        <div className="absolute h-svh w-full -z-20 p-3 lg:p-5">
-          <Image
-            src={homeRender}
-            alt="The Forge"
-            className="object-cover h-full w-full opacity-85 -z-20 rounded-3xl"
-            priority
-          />
-        </div>
+        <HeroImage />
 
         <div className="flex p-3 lg:p-5 h-full">
           <div className="flex flex-col lg:flex-row h-full w-full">
-            <div className="flex flex-col gap-4 w-full h-1/2 lg:h-full lg:w-1/2 p-3 lg:p-5">
+            <div className="flex flex-col gap-4 w-full h-1/2 lg:h-full lg:w-1/2 p-5">
               <Image
                 src={theForgeLogo}
                 alt="The Forge logo"
-                className="w-2/3"
+                className="w-3/4 md:w-2/3"
               />
-              <p className="text-sm md:text-base xl:text-xl 2xl:text-2xl font-medium">
-                Coming soon to 285 Liberty Street.
+              <p className="text-sm md:text-base xl:text-xl 2xl:text-2xl">
+                Coming soon at 285 Liberty Street
               </p>
             </div>
 
@@ -56,14 +52,92 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="the-forge" className="h-svh bg-[#B12D10]">
-        The Forge
+      <section id="the-forge" className="flex flex-col lg:flex-row text-white">
+        <ForgeInfoSection />
+        <div className="flex-1 flex-col items-start justify-between w-full lg:w-3/5">
+          <div className="grid grid-cols-2 gap-5 md:gap-10 bg-forgeRed-2 w-full h-full p-5 md:p-10">
+            <Image
+              src={placeholderImage}
+              alt="placeholder"
+              className="object-cover h-full w-full"
+            />
+            <Image
+              src={placeholderImage}
+              alt="placeholder"
+              className="object-cover h-full w-full"
+            />
+            <Image
+              src={placeholderImage}
+              alt="placeholder"
+              className="object-cover h-full w-full"
+            />
+            <Image
+              src={placeholderImage}
+              alt="placeholder"
+              className="object-cover h-full w-full"
+            />
+          </div>
+        </div>
       </section>
-      <section id="the-collective" className="h-svh bg-[#D07BAE]">
-        The Collective
+
+      <section
+        id="the-collective"
+        className="flex flex-col lg:flex-row text-white"
+      >
+        <div className="flex-1 flex-col items-start justify-between w-full lg:w-3/5 order-last lg:order-first">
+          <div className="grid grid-cols-2 gap-5 md:gap-10 bg-collectivePink-2 w-full h-full p-5 md:p-10">
+            <Image
+              src={placeholderImage}
+              alt="placeholder"
+              className="object-cover h-full w-full"
+            />
+            <Image
+              src={placeholderImage}
+              alt="placeholder"
+              className="object-cover h-full w-full"
+            />
+            <Image
+              src={placeholderImage}
+              alt="placeholder"
+              className="object-cover h-full w-full"
+            />
+            <Image
+              src={placeholderImage}
+              alt="placeholder"
+              className="object-cover h-full w-full"
+            />
+          </div>
+        </div>
+
+        <CollectiveInfoSection />
       </section>
-      <section id="the-vault" className="h-svh bg-[#10040E]">
-        The Vault
+
+      <section id="the-vault" className="flex flex-col lg:flex-row text-white">
+        <VaultInfoSection />
+        <div className="flex-1 flex-col items-start justify-between w-full lg:w-3/5">
+          <div className="grid grid-cols-2 gap-5 md:gap-10 bg-vaultPurple-2 w-full h-full p-5 md:p-10">
+            <Image
+              src={placeholderImage}
+              alt="placeholder"
+              className="object-cover h-full w-full"
+            />
+            <Image
+              src={placeholderImage}
+              alt="placeholder"
+              className="object-cover h-full w-full"
+            />
+            <Image
+              src={placeholderImage}
+              alt="placeholder"
+              className="object-cover h-full w-full"
+            />
+            <Image
+              src={placeholderImage}
+              alt="placeholder"
+              className="object-cover h-full w-full"
+            />
+          </div>
+        </div>
       </section>
     </main>
   );
