@@ -1,7 +1,7 @@
-import { Inter } from "next/font/google";
+import { Sofia_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const sofiaSans = Sofia_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "The Forge",
@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`min-h-svh flex flex-col mx-auto relative ${inter.className}`}
+        className={`min-h-svh flex flex-col mx-auto relative ${sofiaSans.className}`}
       >
         {children}
       </body>
