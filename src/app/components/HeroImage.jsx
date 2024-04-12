@@ -9,6 +9,7 @@ export default function HeroImage() {
         alt="The Forge"
         className="object-cover h-full w-full opacity-85 -z-20 rounded-3xl"
         priority
+        placeholder="blur"
       />
     </div>
   );
