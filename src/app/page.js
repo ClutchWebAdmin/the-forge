@@ -8,6 +8,35 @@ import ForgePhotoSection from "./components/ForgePhotoSection";
 import ElevatorPanel from "./components/ElevatorPanel";
 import TheForgeLogo from "./components/TheForgeLogo";
 
+export const metadata = {
+  title: "The Forge - Coming soon to 285 Liberty St",
+  description:
+    "The Forge is a remarkable redevelopment project in downtown Salem's former Liberty Plaza building",
+  keywords:
+    "Salem Oregon commercial real estate, retail space, restaurant space, salon space, spas, downtown salem, commercial, food, entertainment, central business district, parking garage",
+  openGraph: {
+    title: "The Forge",
+    description:
+      "The Forge is a remarkable redevelopment project in downtown Salem's former Liberty Plaza building.",
+    siteName: "The Forge",
+    type: "website",
+    locale: "en_US",
+    url: "https://theforge.com",
+    images: [
+      {
+        url: "https://theforge.com/images/og-image.png",
+        alt: "The Forge",
+      },
+    ],
+  },
+  images: [
+    {
+      url: "https://theforge.com/images/og-image.png",
+      alt: "The Forge",
+    },
+  ],
+};
+
 export default function Home() {
   return (
     <main className="flex flex-col">
