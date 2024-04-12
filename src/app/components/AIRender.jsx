@@ -7,6 +7,7 @@ export default function AIRender({ photo }) {
       alt="sample rendering of space"
       className="object-cover h-full w-full"
       placeholder="blur"
+      quality={50}
     />
   );
 }
