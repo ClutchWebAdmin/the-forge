@@ -1,4 +1,3 @@
-import placeholderImage from "../../../public/images/placeholder-image.png";
 import AIRender from "./AIRender";
 import vault1 from "../../../public/images/vault1.jpg";
 import vault2 from "../../../public/images/vault2.webp";
