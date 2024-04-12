@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        forgeBrown: "#220202",
+        forgeBrown: "#371414",
         forgeRed: {
           1: "#FF7223",
           2: "#B80000",
