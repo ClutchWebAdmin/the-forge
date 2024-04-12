@@ -21,17 +21,17 @@ export const metadata = {
     siteName: "The Forge",
     type: "website",
     locale: "en_US",
-    url: "https://theforge.com",
+    url: "https://forgesalem.com",
     images: [
       {
-        url: "https://theforge.com/images/og-image.png",
+        url: "https://the-forge-salem.vercel.app/images/og-image.png",
         alt: "The Forge",
       },
     ],
   },
   images: [
     {
-      url: "https://theforge.com/images/og-image.png",
+      url: "https://the-forge-salem.vercel.app/images/og-image.png",
       alt: "The Forge",
     },
   ],
