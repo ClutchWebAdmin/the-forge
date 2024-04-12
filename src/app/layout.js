@@ -1,5 +1,7 @@
 import { Sofia_Sans } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const sofiaSans = Sofia_Sans({ subsets: ["latin"] });
 
@@ -16,6 +18,8 @@ export default function RootLayout({ children }) {
       >
         {children}
       </body>
+      {/* <GoogleAnalytics gaId="" /> */}
+      <Analytics />
     </html>
   );
 }
