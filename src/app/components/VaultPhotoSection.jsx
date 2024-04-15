@@ -1,8 +1,8 @@
 import AIRender from "./AIRender";
-import vault1 from "../../../public/images/vault1.jpg";
-import vault2 from "../../../public/images/vault2.webp";
-import vault3 from "../../../public/images/vault3.webp";
-import vault4 from "../../../public/images/vault4.webp";
+import vault1 from "../../../public/images/vault1.png";
+import vault2 from "../../../public/images/vault2.png";
+import vault3 from "../../../public/images/vault3.png";
+import vault4 from "../../../public/images/vault4.png";
 
 export default function VaultPhotoSection() {
   return (
