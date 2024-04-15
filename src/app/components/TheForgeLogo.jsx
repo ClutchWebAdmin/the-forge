@@ -3,7 +3,12 @@ import theForgeLogo from "../../../public/logos/the-forge-logo.svg";
 
 export default function TheForgeLogo() {
   return (
-    <div className="flex flex-col gap-0.5 w-full h-1/2 lg:h-full lg:w-1/2 px-5 pt-5">
+    <div
+      className="flex flex-col gap-0.5 w-full h-1/2 lg:h-full lg:w-1/2 px-5 pt-5"
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-once="true"
+    >
       <Image
         src={theForgeLogo}
         alt="The Forge logo"
