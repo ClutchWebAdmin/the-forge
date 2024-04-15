@@ -3,6 +3,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import BackToTopButton from "./components/BackToTopButton";
+import AnimateOnScroll from "./components/AnimateOnScroll";
 
 const sofiaSans = Sofia_Sans({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       >
         {children}
         <BackToTopButton />
+        <AnimateOnScroll />
       </body>
       <GoogleAnalytics gaId="G-JDTFC50BZ6" />
       <Analytics />
