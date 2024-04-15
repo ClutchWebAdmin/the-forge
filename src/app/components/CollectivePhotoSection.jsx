@@ -1,7 +1,7 @@
-import collective1 from "../../../public/images/collective1.webp";
-import collective2 from "../../../public/images/collective2.webp";
-import collective3 from "../../../public/images/collective3.webp";
-import collective4 from "../../../public/images/collective4.jpg";
+import collective1 from "../../../public/images/collective1.png";
+import collective2 from "../../../public/images/collective2.png";
+import collective3 from "../../../public/images/collective3.png";
+import collective4 from "../../../public/images/collective4.png";
 import AIRender from "./AIRender";
 
 export default function CollectivePhotoSection() {
