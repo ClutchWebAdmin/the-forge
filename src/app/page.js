@@ -1,13 +1,12 @@
 import HeroImage from "./components/HeroImage";
-import ForgeInfoSection from "./components/ForgeInfoSection";
-import VaultInfoSection from "./components/VaultInfoSection";
-import CollectiveInfoSection from "./components/CollectiveInfoSection";
 import CollectivePhotoSection from "./components/CollectivePhotoSection";
 import VaultPhotoSection from "./components/VaultPhotoSection";
 import ForgePhotoSection from "./components/ForgePhotoSection";
 import ElevatorPanel from "./components/ElevatorPanel";
 import TheForgeLogo from "./components/TheForgeLogo";
 import TheFooter from "./components/TheFooter";
+import InfoSectionTextLeft from "./components/InfoSectionTextLeft";
+import InfoSectionTextRight from "./components/InfoSectionTextRight";
 
 export const metadata = {
   title: "The Forge - Coming soon to 285 Liberty St",
@@ -38,6 +37,27 @@ export const metadata = {
   ],
 };
 
+const theForgeFeatures = [
+  "Ground floor and street level",
+  "Spaces ranging from 1470SF to 2800SF",
+  "Roll-up door access for indoor/outdoor seating",
+  "Perfect for food, entertainment, brunch spots, bars & more",
+];
+
+const theVaultFeatures = [
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+  "Spaces ranging from XXXXSF to XXXXSF",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+];
+
+const theCollectiveFeatures = [
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+  "Spaces ranging from XXXXSF to XXXXSF",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+];
+
 export default function Home() {
   return (
     <main className="flex flex-col">
@@ -52,7 +72,13 @@ export default function Home() {
       </section>
 
       <section id="the-forge" className="flex flex-col lg:flex-row text-white">
-        <ForgeInfoSection />
+        <InfoSectionTextLeft
+          eyebrowText="Restaurant & Retail Space"
+          headingText="The Forge"
+          topBackgroundColor="bg-forgeRed-4"
+          bottomBackgroundColor="bg-forgeRed-3"
+          featuresArray={theForgeFeatures}
+        />
         <ForgePhotoSection />
       </section>
 
@@ -61,11 +87,23 @@ export default function Home() {
         className="flex flex-col lg:flex-row text-white"
       >
         <CollectivePhotoSection />
-        <CollectiveInfoSection />
+        <InfoSectionTextRight
+          eyebrowText="Salon, Spa, & Beauty Space"
+          headingText="The Collective"
+          topBackgroundColor="bg-collectivePink-5"
+          bottomBackgroundColor="bg-collectivePink-4"
+          featuresArray={theCollectiveFeatures}
+        />
       </section>
 
       <section id="the-vault" className="flex flex-col lg:flex-row text-white">
-        <VaultInfoSection />
+        <InfoSectionTextLeft
+          eyebrowText="Wine Cellar"
+          headingText="The Vault"
+          topBackgroundColor="bg-vaultPurple-4"
+          bottomBackgroundColor="bg-vaultPurple-3"
+          featuresArray={theVaultFeatures}
+        />
         <VaultPhotoSection />
       </section>
 

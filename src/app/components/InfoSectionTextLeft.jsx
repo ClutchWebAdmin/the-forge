@@ -1,15 +1,25 @@
 import InfoButton from "./InfoButton";
 
-export default function ForgeInfoSection() {
+export default function InfoSectionTextLeft({
+  eyebrowText,
+  headingText,
+  featuresArray,
+  topBackgroundColor,
+  bottomBackgroundColor,
+}) {
   return (
     <div className="flex flex-col items-start justify-between h-auto w-full lg:w-2/5">
-      <div className="flex flex-col gap-1 bg-forgeRed-4 w-full h-fit p-10">
-        <h4 className="text-lg text-gray-300">Restaurant & Retail Space</h4>
+      <div
+        className={`flex flex-col gap-1 ${topBackgroundColor} w-full h-fit p-10`}
+      >
+        <h4 className="text-lg text-gray-300">{eyebrowText}</h4>
         <h3 className="text-5xl md:text-7xl 2xl:text-8xl font-medium">
-          The Forge
+          {headingText}
         </h3>
       </div>
-      <div className="flex-1 flex flex-col gap-6 lg:gap-10 bg-forgeRed-3 w-full h-auto p-10">
+      <div
+        className={`flex-1 flex flex-col gap-6 lg:gap-10 ${bottomBackgroundColor} w-full h-auto p-10`}
+      >
         <h4
           className="text-2xl md:text-3xl xl:text-4xl border-b pb-2 w-fit"
           data-aos="fade-up"
@@ -24,10 +34,9 @@ export default function ForgeInfoSection() {
           data-aos-duration="800"
           data-aos-once="true"
         >
-          <li>Ground floor and street level</li>
-          <li>Spaces ranging from 1470SF to 2800SF</li>
-          <li>Roll-up door access for indoor/outdoor seating</li>
-          <li>Perfect for food, entertainment, brunch spots, bars & more</li>
+          {featuresArray.map((item, index) => {
+            return <li key={index}>{item}</li>;
+          })}
         </ul>
         <InfoButton />
       </div>
