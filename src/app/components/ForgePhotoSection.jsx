@@ -1,7 +1,7 @@
-import forge1 from "../../../public/images/forge1.jpg";
-import forge2 from "../../../public/images/forge2.jpg";
-import forge3 from "../../../public/images/forge3.jpg";
-import forge4 from "../../../public/images/forge4.webp";
+import forge1 from "../../../public/images/forge1.png";
+import forge2 from "../../../public/images/forge2.png";
+import forge3 from "../../../public/images/forge3.png";
+import forge4 from "../../../public/images/forge4.png";
 import AIRender from "./AIRender";
 
 export default function ForgePhotoSection() {
