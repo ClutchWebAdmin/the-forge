@@ -10,6 +10,12 @@ export default function ElevatorPanel() {
     >
       <ul className="flex flex-col m-3 lg:m-5 p-3 rounded-2xl bg-white/70 backdrop-blur-xs text-xl lg:text-2xl font-medium">
         <ElevatorLink
+          linkTo="#dpw"
+          number="3"
+          name="DPW"
+          subtext="Third Floor"
+        />
+        <ElevatorLink
           linkTo="#the-collective"
           number="2"
           name="The Collective"

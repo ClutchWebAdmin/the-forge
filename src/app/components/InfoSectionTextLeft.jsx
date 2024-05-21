@@ -3,7 +3,7 @@ import InfoButton from "./InfoButton";
 export default function InfoSectionTextLeft({
   eyebrowText,
   headingText,
-  featuresArray,
+  description,
   topBackgroundColor,
   bottomBackgroundColor,
 }) {
@@ -26,18 +26,16 @@ export default function InfoSectionTextLeft({
           data-aos-duration="800"
           data-aos-once="true"
         >
-          Features & Amenities
+          About The Space
         </h4>
-        <ul
-          className="list-disc flex flex-col gap-1 pl-8 text-lg lg:text-xl"
+        <p
+          className="text-lg lg:text-xl"
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-once="true"
         >
-          {featuresArray.map((item, index) => {
-            return <li key={index}>{item}</li>;
-          })}
-        </ul>
+          {description}
+        </p>
         <InfoButton />
       </div>
     </div>

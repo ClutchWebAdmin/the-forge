@@ -7,6 +7,7 @@ import TheForgeLogo from "./components/TheForgeLogo";
 import TheFooter from "./components/TheFooter";
 import InfoSectionTextLeft from "./components/InfoSectionTextLeft";
 import InfoSectionTextRight from "./components/InfoSectionTextRight";
+import DPWPhotoSection from "./components/DPWPhotoSection";
 
 export const metadata = {
   title: "The Forge - Coming soon to 285 Liberty St",
@@ -37,27 +38,6 @@ export const metadata = {
   ],
 };
 
-const theForgeFeatures = [
-  "Ground floor and street level",
-  "Spaces ranging from 1470SF to 2800SF",
-  "Roll-up door access for indoor/outdoor seating",
-  "Perfect for food, entertainment, brunch spots, bars & more",
-];
-
-const theVaultFeatures = [
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-  "Spaces ranging from XXXXSF to XXXXSF",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-];
-
-const theCollectiveFeatures = [
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-  "Spaces ranging from XXXXSF to XXXXSF",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-];
-
 export default function Home() {
   return (
     <main className="flex flex-col">
@@ -71,38 +51,49 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="the-forge" className="flex flex-col lg:flex-row text-white">
+      <section id="dpw" className="flex flex-col lg:flex-row text-white">
         <InfoSectionTextLeft
-          eyebrowText="Restaurant & Retail Space"
-          headingText="The Forge"
-          topBackgroundColor="bg-forgeRed-4"
-          bottomBackgroundColor="bg-forgeRed-3"
-          featuresArray={theForgeFeatures}
+          eyebrowText="Tax & Business Advisory Firm"
+          headingText="DPW"
+          topBackgroundColor="bg-blue-800"
+          bottomBackgroundColor="bg-blue-600"
+          description="We are thrilled to welcome DPW, a distinguished tax and business advisory firm, as the newest tenant on the top floor of The Forge. Headquartered in Salem, Oregon, DPW offers comprehensive financial services with a reputation for excellence. Their new space at The Forge is a testament to their growth and the trust their clients place in them. We are confident that DPW's presence will enhance our vibrant business community. We look forward to welcoming you and continuing to serve your financial needs with the professionalism you expect from DPW."
         />
-        <ForgePhotoSection />
+        <DPWPhotoSection />
       </section>
 
       <section
         id="the-collective"
         className="flex flex-col lg:flex-row text-white"
       >
-        <CollectivePhotoSection />
         <InfoSectionTextRight
           eyebrowText="Salon, Spa, & Beauty Space"
           headingText="The Collective"
           topBackgroundColor="bg-collectivePink-5"
           bottomBackgroundColor="bg-collectivePink-4"
-          featuresArray={theCollectiveFeatures}
+          description="Connect and belong on Floor 2, a curated haven where beauty and wellness converge with networking and socializing. This vibrant community houses 21 distinct salon suites, each crafted to empower and inspire influential women. Revel in the sophisticated atmosphere at our exclusive champagne and martini bar, designed to complement your luxurious experience."
         />
+        <CollectivePhotoSection />
+      </section>
+
+      <section id="the-forge" className="flex flex-col lg:flex-row text-white">
+        <InfoSectionTextLeft
+          eyebrowText="Restaurant & Retail Space"
+          headingText="The Forge"
+          topBackgroundColor="bg-forgeRed-4"
+          bottomBackgroundColor="bg-forgeRed-3"
+          description="Welcome to The Forge, Salem's emerging social hub poised to become the city's premier destination for entertainment and dining. This floor is actively seeking vibrant local businesses, from dynamic sports bars to complimentary dining and entertainment."
+        />
+        <ForgePhotoSection />
       </section>
 
       <section id="the-vault" className="flex flex-col lg:flex-row text-white">
-        <InfoSectionTextLeft
+        <InfoSectionTextRight
           eyebrowText="Wine Cellar"
           headingText="The Vault"
           topBackgroundColor="bg-vaultPurple-4"
           bottomBackgroundColor="bg-vaultPurple-3"
-          featuresArray={theVaultFeatures}
+          description="Descend into The Vault, a hidden gem beneath the bustling activity of the floors above. This versatile basement space offers two distinct possibilities: a private underground event venue perfect for exclusive gatherings, or a sophisticated bourbon and wine lounge tailored for connoisseurs. Both options provide a secure and private setting, ideal for those seeking to enjoy their favorite beverages in an atmosphere of exclusivity and refinement."
         />
         <VaultPhotoSection />
       </section>
