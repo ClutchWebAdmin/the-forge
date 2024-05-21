@@ -1,3 +1,5 @@
+import SocialIcons from "./SocialIcons";
+
 export default function TheFooter() {
   return (
     <footer className="flex flex-col gap-4 lg:flex-row lg:items-end justify-between text-forgeBrown p-5">
@@ -7,7 +9,10 @@ export default function TheFooter() {
         will soon be replaced with high-quality photography as part of our
         upcoming building remodel.
       </p>
-      <p className="text-lg font-medium">© 2024 The Forge</p>
+      <div className="flex flex-col justify-between h-full gap-2 items-end">
+        <SocialIcons placement="footer" />
+        <p className="text-lg font-medium">© 2024 The Forge</p>
+      </div>
     </footer>
   );
 }
