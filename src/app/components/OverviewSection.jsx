@@ -14,21 +14,20 @@ export default function OverviewSection() {
           The Birth of The Forge
         </h2>
       </div>
-      <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:text-lg">
-        <div className="flex flex-col gap-4 w-full lg:w-1/2">
-          <p className="lg:indent-8">
-            In the heart of North Downtown Salem, where Liberty Plaza once
-            stood, now rises a beacon of revitalization - The Forge. With a
-            vision to breathe new life into the community, the redevelopment
-            team has embarked on a journey to transform the area into a vibrant
-            business community.
-          </p>
-          <p>
-            The first significant change is happening with the rebranding of the
-            plaza. Shedding its old identity, The Forge symbolizes not only a
-            place of creation but also for change and progress.
-          </p>
-          <p>
+      <div className="grid lg:grid-cols-4 gap-4 lg:gap-y-0 lg:gap-x-8 lg:text-lg">
+        <p className="lg:indent-8 col-span-full lg:pb-8">
+          In the heart of North Downtown Salem, where Liberty Plaza once stood,
+          now rises a beacon of revitalization - The Forge. With a vision to
+          breathe new life into the community, the redevelopment team has
+          embarked on a journey to transform the area into a vibrant business
+          community. The first significant change is happening with the
+          rebranding of the plaza. Shedding its old identity, The Forge
+          symbolizes not only a place of creation but also for change and
+          progress.
+        </p>
+
+        <div className="col-span-full grid lg:grid-cols-4">
+          <p className="lg:border-l lg:border-b lg:border-forgeBrown lg:pl-4 lg:pb-4 lg:pt-4 lg:text-justify">
             At the{" "}
             <Link
               href="#dpw"
@@ -41,7 +40,10 @@ export default function OverviewSection() {
             addition promises not only job opportunities but a sense of
             stability and growth in The Forge.
           </p>
-          <p>
+        </div>
+
+        <div className="col-span-full grid lg:grid-cols-4">
+          <p className="lg:col-start-2 lg:border-l lg:border-b lg:border-forgeBrown lg:pl-4 lg:pb-4 lg:pt-4 lg:text-justify">
             Venturing down to the{" "}
             <Link
               href="#the-collective"
@@ -55,7 +57,10 @@ export default function OverviewSection() {
             intrigue, a testament to The Forge's commitment to excellence and
             innovation.
           </p>
-          <p>
+        </div>
+
+        <div className="col-span-full grid lg:grid-cols-4">
+          <p className="lg:col-start-3 lg:border-l lg:border-b lg:border-forgeBrown lg:pl-4 lg:pb-4 lg:pt-4 lg:text-justify">
             Descending to the{" "}
             <Link
               href="#the-forge"
@@ -68,8 +73,9 @@ export default function OverviewSection() {
             flavors and experiences coming soon!
           </p>
         </div>
-        <div className="flex flex-col gap-4 w-full lg:w-1/2">
-          <p>
+
+        <div className="col-span-full grid lg:grid-cols-4 lg:pb-8">
+          <p className="lg:col-start-4 lg:border-l lg:border-b lg:border-black lg:pl-4 lg:pb-4 lg:pt-4 lg:text-justify">
             The{" "}
             <Link
               href="#the-vault"
@@ -82,24 +88,21 @@ export default function OverviewSection() {
             of a family friendly entertainment area reminiscent of a Dave and
             Buster's. What will it become?
           </p>
-          <p>
-            Externally, the transformation is taking shape. Fresh renovations
-            including spill-out seating on the sidewalks that will invite
-            patrons to linger and connect with their surroundings.
-          </p>
-          <p>
-            Momentum grows with each passing day! Lease reservations are coming
-            in and remaining spaces are filling up! The team anticipates the
-            majority of vacant spaces will be committed by summer 2024, and the
-            project is on track for completion and grand reopening early 2025.
-          </p>
-          <p>
-            The team remains committed to our vision that extends beyond bricks
-            and mortar, encompassing a commitment to nurture partnerships with
-            the best downtown establishments and forge a legacy that will endure
-            generations to come.
-          </p>
         </div>
+
+        <p className="col-span-full">
+          Externally, the transformation is taking shape. Fresh renovations
+          including spill-out seating on the sidewalks that will invite patrons
+          to linger and connect with their surroundings. Momentum grows with
+          each passing day! Lease reservations are coming in and remaining
+          spaces are filling up! The team anticipates the majority of vacant
+          spaces will be committed by summer 2024, and the project is on track
+          for completion and grand reopening early 2025. The team remains
+          committed to our vision that extends beyond bricks and mortar,
+          encompassing a commitment to nurture partnerships with the best
+          downtown establishments and forge a legacy that will endure
+          generations to come.
+        </p>
       </div>
     </section>
   );
