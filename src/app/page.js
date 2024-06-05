@@ -27,14 +27,14 @@ export const metadata = {
     url: "https://forgesalem.com",
     images: [
       {
-        url: "https://the-forge-salem.vercel.app/images/og-image.png",
+        url: "https://forgesalem.com/images/og-image.png",
         alt: "The Forge",
       },
     ],
   },
   images: [
     {
-      url: "https://the-forge-salem.vercel.app/images/og-image.png",
+      url: "https://forgesalem.com/images/og-image.png",
       alt: "The Forge",
     },
   ],
