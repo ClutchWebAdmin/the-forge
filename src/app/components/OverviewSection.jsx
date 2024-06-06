@@ -27,67 +27,91 @@ export default function OverviewSection() {
         </p>
 
         <div className="col-span-full grid lg:grid-cols-4">
-          <p className="lg:border-l lg:border-b lg:border-forgeBrown lg:pl-4 lg:pb-4 lg:pt-4 lg:text-justify">
-            At the{" "}
-            <Link
-              href="#dpw"
-              className="text-blue-900 hover:underline hover:underline-offset-4 font-bold"
+          <div className="lg:border-l lg:border-b lg:border-forgeBrown lg:pl-4 lg:pb-4 lg:pt-4 lg:text-justify">
+            <p
+              data-aos="fade-left"
+              data-aos-duration="800"
+              data-aos-once="true"
             >
-              top floor
-            </Link>
-            , a corporate office for professional service firms makes a
-            significant milestone in the area's commercial landscape. This
-            addition promises not only job opportunities but a sense of
-            stability and growth in The Forge.
-          </p>
+              At the{" "}
+              <Link
+                href="#dpw"
+                className="text-blue-900 hover:underline hover:underline-offset-4 font-bold"
+              >
+                top floor
+              </Link>
+              , a corporate office for professional service firms makes a
+              significant milestone in the area's commercial landscape. This
+              addition promises not only job opportunities but a sense of
+              stability and growth in The Forge.
+            </p>
+          </div>
         </div>
 
         <div className="col-span-full grid lg:grid-cols-4">
-          <p className="lg:col-start-2 lg:border-l lg:border-b lg:border-forgeBrown lg:pl-4 lg:pb-4 lg:pt-4 lg:text-justify">
-            Venturing down to the{" "}
-            <Link
-              href="#the-collective"
-              className="text-blue-900 hover:underline hover:underline-offset-4 font-bold"
+          <div className="lg:col-start-2 lg:border-l lg:border-b lg:border-forgeBrown lg:pl-4 lg:pb-4 lg:pt-4 lg:text-justify">
+            <p
+              data-aos="fade-left"
+              data-aos-duration="800"
+              data-aos-once="true"
             >
-              second floor
-            </Link>
-            , the Forge Collective, offering 21 salon suites where beauty
-            professionals can collaborate and thrive. Yet, it's the goal of
-            creating the “best women's restroom in Salem” that is sparking
-            intrigue, a testament to The Forge's commitment to excellence and
-            innovation.
-          </p>
+              Venturing down to the{" "}
+              <Link
+                href="#the-collective"
+                className="text-blue-900 hover:underline hover:underline-offset-4 font-bold"
+              >
+                second floor
+              </Link>
+              , the Forge Collective, offering 21 salon suites where beauty
+              professionals can collaborate and thrive. Yet, it's the goal of
+              creating the “best women's restroom in Salem” that is sparking
+              intrigue, a testament to The Forge's commitment to excellence and
+              innovation.
+            </p>
+          </div>
         </div>
 
         <div className="col-span-full grid lg:grid-cols-4">
-          <p className="lg:col-start-3 lg:border-l lg:border-b lg:border-forgeBrown lg:pl-4 lg:pb-4 lg:pt-4 lg:text-justify">
-            Descending to the{" "}
-            <Link
-              href="#the-forge"
-              className="text-blue-900 hover:underline hover:underline-offset-4 font-bold"
+          <div className="lg:col-start-3 lg:border-l lg:border-b lg:border-forgeBrown lg:pl-4 lg:pb-4 lg:pt-4 lg:text-justify">
+            <p
+              data-aos="fade-left"
+              data-aos-duration="800"
+              data-aos-once="true"
             >
-              first floor
-            </Link>
-            , alongside established favorites like Cozy Taberna and Rudy's
-            Steakhouse, plans for a new sports bar and fine dining options. New
-            flavors and experiences coming soon!
-          </p>
+              Descending to the{" "}
+              <Link
+                href="#the-forge"
+                className="text-blue-900 hover:underline hover:underline-offset-4 font-bold"
+              >
+                first floor
+              </Link>
+              , alongside established favorites like Cozy Taberna and Rudy's
+              Steakhouse, plans for a new sports bar and fine dining options.
+              New flavors and experiences coming soon!
+            </p>
+          </div>
         </div>
 
         <div className="col-span-full grid lg:grid-cols-4 lg:pb-8">
-          <p className="lg:col-start-4 lg:border-l lg:border-b lg:border-black lg:pl-4 lg:pb-4 lg:pt-4 lg:text-justify">
-            The{" "}
-            <Link
-              href="#the-vault"
-              className="text-blue-900 hover:underline hover:underline-offset-4 font-bold"
+          <div className="lg:col-start-4 lg:border-l lg:border-b lg:border-black lg:pl-4 lg:pb-4 lg:pt-4 lg:text-justify">
+            <p
+              data-aos="fade-left"
+              data-aos-duration="800"
+              data-aos-once="true"
             >
-              lowest level
-            </Link>{" "}
-            has sparked the most intrigue. Rumors are circulating that a private
-            bourbon and wine lounge may be on the horizon. Alternatively, hints
-            of a family friendly entertainment area reminiscent of a Dave and
-            Buster's. What will it become?
-          </p>
+              The{" "}
+              <Link
+                href="#the-vault"
+                className="text-blue-900 hover:underline hover:underline-offset-4 font-bold"
+              >
+                lowest level
+              </Link>{" "}
+              has sparked the most intrigue. Rumors are circulating that a
+              private bourbon and wine lounge may be on the horizon.
+              Alternatively, hints of a family friendly entertainment area
+              reminiscent of a Dave and Buster's. What will it become?
+            </p>
+          </div>
         </div>
 
         <p className="col-span-full">

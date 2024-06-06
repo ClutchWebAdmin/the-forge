@@ -60,6 +60,8 @@ export default function Home() {
         <InfoSectionTextLeft
           eyebrowText="Tax & Business Advisory Firm"
           headingText="DPW"
+          websiteLink="https://dpwcpas.com/"
+          websiteText="www.dpwcpas.com"
           topBackgroundColor="bg-blue-800"
           bottomBackgroundColor="bg-blue-600"
           description="We are thrilled to welcome DPW, a distinguished tax and business advisory firm, as the newest tenant on the top floor of The Forge. Headquartered in Salem, Oregon, DPW offers comprehensive financial services with a reputation for excellence. Their new space at The Forge is a testament to their growth and the trust their clients place in them. We are confident that DPW's presence will enhance our vibrant business community. We look forward to welcoming you and continuing to serve your financial needs with the professionalism you expect from DPW."

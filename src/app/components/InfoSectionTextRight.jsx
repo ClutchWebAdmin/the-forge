@@ -1,3 +1,4 @@
+import { FiExternalLink } from "react-icons/fi";
 import InfoButton from "./InfoButton";
 
 export default function InfoSectionTextRight({
@@ -7,6 +8,8 @@ export default function InfoSectionTextRight({
   topBackgroundColor,
   bottomBackgroundColor,
   floorNumber,
+  websiteLink,
+  websiteText,
 }) {
   return (
     <div className="flex flex-col items-start justify-between h-auto w-full lg:w-2/5 lg:order-last">
@@ -44,6 +47,20 @@ export default function InfoSectionTextRight({
         >
           {description}
         </p>
+        {websiteLink && (
+          <a
+            href={websiteLink}
+            target="_blank"
+            className="flex flex-row gap-2 items-center text-lg lg:text-xl hover:underline decoration-1 underline-offset-4"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-once="true"
+          >
+            <FiExternalLink />
+            {websiteText}
+          </a>
+        )}
+
         <InfoButton />
       </div>
     </div>
