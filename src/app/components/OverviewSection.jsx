@@ -32,7 +32,21 @@ export default function OverviewSection() {
               data-aos="fade-left"
               data-aos-duration="800"
               data-aos-once="true"
+              className="hidden lg:block"
             >
+              At the{" "}
+              <Link
+                href="#dpw"
+                className="text-blue-900 hover:underline hover:underline-offset-4 font-bold"
+              >
+                top floor
+              </Link>
+              , a corporate office for professional service firms makes a
+              significant milestone in the area's commercial landscape. This
+              addition promises not only job opportunities but a sense of
+              stability and growth in The Forge.
+            </p>
+            <p className="lg:hidden">
               At the{" "}
               <Link
                 href="#dpw"
@@ -54,7 +68,22 @@ export default function OverviewSection() {
               data-aos="fade-left"
               data-aos-duration="800"
               data-aos-once="true"
+              className="hidden lg:block"
             >
+              Venturing down to the{" "}
+              <Link
+                href="#the-collective"
+                className="text-blue-900 hover:underline hover:underline-offset-4 font-bold"
+              >
+                second floor
+              </Link>
+              , the Forge Collective, offering 21 salon suites where beauty
+              professionals can collaborate and thrive. Yet, it's the goal of
+              creating the “best women's restroom in Salem” that is sparking
+              intrigue, a testament to The Forge's commitment to excellence and
+              innovation.
+            </p>
+            <p className="lg:hidden">
               Venturing down to the{" "}
               <Link
                 href="#the-collective"
@@ -77,7 +106,20 @@ export default function OverviewSection() {
               data-aos="fade-left"
               data-aos-duration="800"
               data-aos-once="true"
+              className="hidden lg:block"
             >
+              Descending to the{" "}
+              <Link
+                href="#the-forge"
+                className="text-blue-900 hover:underline hover:underline-offset-4 font-bold"
+              >
+                first floor
+              </Link>
+              , alongside established favorites like Cozy Taberna and Rudy's
+              Steakhouse, plans for a new sports bar and fine dining options.
+              New flavors and experiences coming soon!
+            </p>
+            <p className="lg:hidden">
               Descending to the{" "}
               <Link
                 href="#the-forge"
@@ -98,7 +140,21 @@ export default function OverviewSection() {
               data-aos="fade-left"
               data-aos-duration="800"
               data-aos-once="true"
+              className="hidden lg:block"
             >
+              The{" "}
+              <Link
+                href="#the-vault"
+                className="text-blue-900 hover:underline hover:underline-offset-4 font-bold"
+              >
+                lowest level
+              </Link>{" "}
+              has sparked the most intrigue. Rumors are circulating that a
+              private bourbon and wine lounge may be on the horizon.
+              Alternatively, hints of a family friendly entertainment area
+              reminiscent of a Dave and Buster's. What will it become?
+            </p>
+            <p className="lg:hidden">
               The{" "}
               <Link
                 href="#the-vault"
