@@ -62,8 +62,8 @@ export default function Home() {
           headingText="DPW"
           websiteLink="https://dpwcpas.com/"
           websiteText="www.dpwcpas.com"
-          topBackgroundColor="bg-blue-800"
-          bottomBackgroundColor="bg-blue-600"
+          topBackgroundColor="bg-dpwBlue-dark"
+          bottomBackgroundColor="bg-dpwBlue-medium"
           description="We are thrilled to welcome DPW, a distinguished tax and business advisory firm, as the newest tenant on the top floor of The Forge. Headquartered in Salem, Oregon, DPW offers comprehensive financial services with a reputation for excellence. Their new space at The Forge is a testament to their growth and the trust their clients place in them. We are confident that DPW's presence will enhance our vibrant business community. We look forward to welcoming you and continuing to serve your financial needs with the professionalism you expect from DPW."
           floorNumber="3"
         />
@@ -77,8 +77,8 @@ export default function Home() {
         <InfoSectionTextRight
           eyebrowText="Salon, Spa, & Beauty Space"
           headingText="The Collective"
-          topBackgroundColor="bg-collectivePink-5"
-          bottomBackgroundColor="bg-collectivePink-4"
+          topBackgroundColor="bg-collectivePink-dark"
+          bottomBackgroundColor="bg-collectivePink-medium"
           description="Connect and belong on Floor 2, a curated haven where beauty and wellness converge with networking and socializing. This vibrant community houses 21 distinct salon suites, each crafted to empower and inspire influential women. Revel in the sophisticated atmosphere at our exclusive champagne and martini bar, designed to complement your luxurious experience."
           floorNumber="2"
         />
@@ -89,8 +89,8 @@ export default function Home() {
         <InfoSectionTextLeft
           eyebrowText="Restaurant & Retail Space"
           headingText="The Forge"
-          topBackgroundColor="bg-forgeRed-4"
-          bottomBackgroundColor="bg-forgeRed-3"
+          topBackgroundColor="bg-forgeRed-dark"
+          bottomBackgroundColor="bg-forgeRed-medium"
           description="Welcome to The Forge, Salem's emerging social hub poised to become the city's premier destination for entertainment and dining. This floor is actively seeking vibrant local businesses, from dynamic sports bars to complimentary dining and entertainment."
           floorNumber="1"
         />
@@ -101,8 +101,8 @@ export default function Home() {
         <InfoSectionTextRight
           eyebrowText="Wine Cellar"
           headingText="The Vault"
-          topBackgroundColor="bg-vaultPurple-4"
-          bottomBackgroundColor="bg-vaultPurple-3"
+          topBackgroundColor="bg-vaultPurple-dark"
+          bottomBackgroundColor="bg-vaultPurple-medium"
           description="Descend into The Vault, a hidden gem beneath the bustling activity of the floors above. This versatile basement space offers two distinct possibilities: a private underground event venue perfect for exclusive gatherings, or a sophisticated bourbon and wine lounge tailored for connoisseurs. Both options provide a secure and private setting, ideal for those seeking to enjoy their favorite beverages in an atmosphere of exclusivity and refinement."
           floorNumber="B"
         />

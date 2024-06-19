@@ -1,11 +1,9 @@
-import { Sofia_Sans } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import BackToTopButton from "./components/BackToTopButton";
 import AnimateOnScroll from "./components/AnimateOnScroll";
-
-const sofiaSans = Sofia_Sans({ subsets: ["latin"] });
+import { workSans } from "./styles/fonts";
 
 export const metadata = {
   title: "The Forge",
@@ -16,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`min-h-svh flex flex-col mx-auto relative ${sofiaSans.className} antialiased`}
+        className={`min-h-svh flex flex-col mx-auto relative ${workSans.className} antialiased`}
       >
         {children}
         <BackToTopButton />

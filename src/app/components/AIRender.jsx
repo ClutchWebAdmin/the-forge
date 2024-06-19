@@ -5,7 +5,7 @@ export default function AIRender({ photo }) {
     <Image
       src={photo}
       alt="sample rendering of space"
-      className="object-cover h-full w-full"
+      className="object-cover h-full w-full aspect-square"
       placeholder="blur"
       quality={50}
     />
