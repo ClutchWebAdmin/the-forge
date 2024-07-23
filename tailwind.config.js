@@ -26,9 +26,9 @@ module.exports = {
           light: "#D25251",
         },
         collectivePink: {
-          dark: "#C086AA",
-          medium: "#D995BF",
-          light: "#F8C9E6",
+          dark: "#D8A6C5",
+          medium: "#E3BFD5",
+          light: "#F4DCEB",
         },
         vaultPurple: {
           dark: "#605856",
