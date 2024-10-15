@@ -39,7 +39,7 @@ export default function OverviewSection() {
             >
               At the{" "}
               <Link
-                href="#dpw"
+                href="#anthem"
                 className="text-blue-900 hover:underline hover:underline-offset-4 font-bold"
               >
                 top floor
