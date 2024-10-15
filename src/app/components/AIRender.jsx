@@ -5,9 +5,9 @@ export default function AIRender({ photo }) {
     <Image
       src={photo}
       alt="sample rendering of space"
-      className="object-cover h-full w-full aspect-square"
-      placeholder="blur"
-      quality={50}
+      className="object-cover h-auto w-full aspect-square rounded-md"
+      // placeholder="blur"
+      quality={60}
     />
   );
 }
