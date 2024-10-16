@@ -24,7 +24,7 @@ export default function InfoSectionTextLeft({
           <h4 className="text-lg">{eyebrowText}</h4>
         </div>
         <h3
-          className={`${aoboshiOne.className} text-4xl lg:text-5xl uppercase`}
+          className={`${aoboshiOne.className} text-4xl lg:text-5xl uppercase w-full`}
         >
           {headingText}
         </h3>

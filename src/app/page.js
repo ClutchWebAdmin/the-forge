@@ -1,3 +1,4 @@
+'use client'
 import HeroImage from "./components/HeroImage";
 import CollectivePhotoSection from "./components/CollectivePhotoSection";
 import VaultPhotoSection from "./components/VaultPhotoSection";
@@ -10,53 +11,91 @@ import InfoSectionTextRight from "./components/InfoSectionTextRight";
 import DPWPhotoSection from "./components/DPWPhotoSection";
 import OverviewSection from "./components/OverviewSection";
 import SocialIcons from "./components/SocialIcons";
+import { useState, useEffect } from "react";
 
-export const metadata = {
-  title: "The Forge - Coming soon to 285 Liberty St",
-  description:
-    "The Forge is a remarkable redevelopment project in downtown Salem's former Liberty Plaza building",
-  keywords:
-    "Salem Oregon commercial real estate, retail space, restaurant space, salon space, spas, downtown salem, commercial, food, entertainment, central business district, parking garage",
-  openGraph: {
-    title: "The Forge",
-    description:
-      "The Forge is a remarkable redevelopment project in downtown Salem's former Liberty Plaza building.",
-    siteName: "The Forge",
-    type: "website",
-    locale: "en_US",
-    url: "https://forgesalem.com",
-    images: [
-      {
-        url: "https://forgesalem.com/images/og-image.png",
-        alt: "The Forge",
-      },
-    ],
-  },
-  images: [
-    {
-      url: "https://forgesalem.com/images/og-image.png",
-      alt: "The Forge",
-    },
-  ],
-};
+// export const metadata = {
+//   title: "The Forge - Coming soon to 285 Liberty St",
+//   description:
+//     "The Forge is a remarkable redevelopment project in downtown Salem's former Liberty Plaza building",
+//   keywords:
+//     "Salem Oregon commercial real estate, retail space, restaurant space, salon space, spas, downtown salem, commercial, food, entertainment, central business district, parking garage",
+//   openGraph: {
+//     title: "The Forge",
+//     description:
+//       "The Forge is a remarkable redevelopment project in downtown Salem's former Liberty Plaza building.",
+//     siteName: "The Forge",
+//     type: "website",
+//     locale: "en_US",
+//     url: "https://forgesalem.com",
+//     images: [
+//       {
+//         url: "https://forgesalem.com/images/og-image.png",
+//         alt: "The Forge",
+//       },
+//     ],
+//   },
+//   images: [
+//     {
+//       url: "https://forgesalem.com/images/og-image.png",
+//       alt: "The Forge",
+//     },
+//   ],
+// };
 
 export default function Home() {
+  const [activeSection, setActiveSection] = useState('');
+
+  useEffect(() => {
+    const sections = document.querySelectorAll('section');
+    
+    const options = {
+      threshold: 0.5, // 50% of the section must be visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id); // Set the active section based on the section ID
+        }
+      });
+    }, options);
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    // Cleanup observer on unmount
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
   return (
     <main className="flex flex-col">
-      <section className="relative h-svh">
+      
+      
+      <div className="fixed bottom-0 right-0 z-50 ">
+        <ElevatorPanel activeSection={activeSection}/>
+      </div>
+      
+      
+      <section id="hero" className="relative h-svh">
         <HeroImage />
         <SocialIcons placement="header" />
         <div className="flex p-3 lg:p-5 h-full">
           <div className="flex flex-col lg:flex-row h-full w-full">
             <TheForgeLogo />
-            <ElevatorPanel />
+            
           </div>
         </div>
       </section>
+      <section id="overview" >
+        <OverviewSection />
+      </section>  
+      
 
-      <OverviewSection />
-
-      <section id="anthem" className="flex flex-col lg:flex-row text-white">
+      <section id="anthem" className="flex flex-col lg:flex-row text-white w-full">
         <InfoSectionTextLeft
           eyebrowText="Tax & Business Advisory Firm"
           headingText="Anthem"
@@ -67,7 +106,10 @@ export default function Home() {
           description="We are thrilled to welcome Anthem, a distinguished tax and business advisory firm, as the newest tenant on the top floor of The Forge. Headquartered in Salem, Oregon, Anthem offers comprehensive financial services with a reputation for excellence. Their new space at The Forge is a testament to their growth and the trust their clients place in them. We are confident that Anthem's presence will enhance our vibrant business community. We look forward to welcoming you and continuing to serve your financial needs with the professionalism you expect from Anthem."
           floorNumber="3"
         />
-        <DPWPhotoSection />
+        <div id="anthem" className="flex lg:w-3/5">
+          <DPWPhotoSection />
+        </div>
+        
       </section>
 
       <section
