@@ -2,12 +2,15 @@ import Image from "next/image";
 
 export default function AIRender({ photo }) {
   return (
-    <Image
+    <div className="h-full max-h-[250px]">
+      <Image
       src={photo}
       alt="sample rendering of space"
-      className="object-cover h-auto w-full aspect-square rounded-md"
+      className="object-cover w-full h-full rounded-md"
       // placeholder="blur"
       quality={60}
     />
+    </div>
+    
   );
 }
