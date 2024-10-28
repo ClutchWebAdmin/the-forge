@@ -1,7 +1,9 @@
+"use client";
 import { FiExternalLink } from "react-icons/fi";
 import InfoButton from "./InfoButton";
 import { Aoboshi_One } from "next/font/google";
 import { aoboshiOne } from "../styles/fonts";
+import { useState, useEffect } from "react";
 
 export default function InfoSectionTextRight({
   eyebrowText,
@@ -12,26 +14,27 @@ export default function InfoSectionTextRight({
   floorNumber,
   websiteLink,
   websiteText,
+  title
 }) {
+
+  const descriptionLines = description.split("\n").filter(line => line.trim() !== "");
+  const [isLongText, setIsLongText] = useState(false);
+
+  useEffect(() => {
+    
+    const lines = description.split("\n");
+
+    // Set isLongText based on the number of lines (e.g., more than 5 lines)
+    if (lines.length > 20) {
+      setIsLongText(true);
+    } else {
+      setIsLongText(false);
+    }
+  }, [description]);
+
   return (
-    <div className="flex flex-col items-start justify-between h-auto w-full lg:w-2/5 lg:order-last">
-      <div
-        className={`flex flex-col gap-1 ${topBackgroundColor} w-full h-fit p-10`}
-      >
-        <div className="flex flex-row items-center gap-2 text-gray-300">
-          <div className="flex justify-center items-center border w-6 h-6 rounded-full text-white text-sm">
-            {floorNumber}
-          </div>
-          <h4 className="text-lg">{eyebrowText}</h4>
-        </div>
-
-        <h3
-          className={`${aoboshiOne.className} text-4xl lg:text-5xl uppercase`}
-        >
-          {headingText}
-        </h3>
-      </div>
-
+    <div className="flex flex-col items-start justify-between h-auto w-full  md:w-3/5 md:order-last">
+      
       <div
         className={`flex-1 flex flex-col gap-6 ${bottomBackgroundColor} w-full h-auto p-10`}
       >
@@ -41,16 +44,16 @@ export default function InfoSectionTextRight({
           data-aos-duration="800"
           data-aos-once="true"
         >
-          About The Space
+          {title}
         </h4>
-        <p
-          className="text-sm lg:text-base"
+        <div className={`text-sm lg:text-base xl:text-xl ${isLongText ? "columns-4 gap-4" : "columns-1"} `}
           data-aos="fade-up"
           data-aos-duration="800"
-          data-aos-once="true"
-        >
-          {description}
-        </p>
+          data-aos-once="true">
+        {descriptionLines.map((line, index) => (
+          <p key={index} className="mb-2">{line}</p>
+        ))}
+      </div>
         {websiteLink && (
           <a
             href={websiteLink}

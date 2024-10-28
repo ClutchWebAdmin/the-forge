@@ -2,29 +2,15 @@ import { FaArrowRight } from "react-icons/fa6";
 
 export default function AnthemVideo() {
   return (
-    <section className="">
-      {/* <video
-        autoPlay
-        muted
-        loop
-        className="w-full h-full object-cover brightness-105"
-        preload="auto"
-        playsInline
-      >
-        <source src="/images/Anthem-Forge.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video> */}
-
-      
+    <div className="relative w-full h-full max-h-[500px] aspect-w-16 aspect-h-9 ">
       <video
-        className="rounded-md"
-        src="/images/AnthemTest3.mp4" // Make sure to put the correct path to your video file
+        className="object-cover h-full w-full rounded-md "
+        src="/images/Anthem-Layout-Vid.mp4" // Make sure to put the correct path to your video file
         loop
         autoPlay
         muted
         playsInline // Helps autoplay on mobile devices
       />
-
-    </section>
+    </div>
   );
 }

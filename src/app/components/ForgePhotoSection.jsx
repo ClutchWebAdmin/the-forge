@@ -6,8 +6,8 @@ import AIRender from "./AIRender";
 
 export default function ForgePhotoSection() {
   return (
-    <div className="flex-1 flex-col items-start justify-between w-full lg:w-3/5">
-      <div className="grid grid-cols-2 gap-5 md:gap-10 bg-forgeRed-light w-full h-full p-5 md:p-10">
+    <div className="flex-1 flex-col justify-between w-full lg:w-2/5">
+      <div className="grid grid-cols-2 items-center gap-5 md:gap-10 bg-forgeRed-light w-full h-full p-5 md:p-10">
         <AIRender photo={forge1} />
         <AIRender photo={forge2} />
         <AIRender photo={forge3} />

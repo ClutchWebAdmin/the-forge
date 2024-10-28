@@ -26,20 +26,34 @@ module.exports = {
           light: "#D25251",
         },
         collectivePink: {
-          dark: "#D8A6C5",
-          medium: "#E3BFD5",
-          light: "#F4DCEB",
+          dark: "#C9A59A",
+          medium: "#E4B79A",
+          light: "#E4D6D3",
         },
         vaultPurple: {
           dark: "#605856",
           medium: "#7D726E",
           light: "#928682",
         },
+        blush: {
+          light: "#FADADD",  // Light blush color
+        },
       },
       aspectRatio: {
         '4/3': '4 / 3',
       },
+      textShadow: {
+        'outline': '1px 1px 2px black',  // You can customize this value
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.text-outline': {
+          textShadow: '1px 1px 2px black',
+        },
+      });
+    },
+  ],
 };
