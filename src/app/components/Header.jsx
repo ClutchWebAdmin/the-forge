@@ -31,29 +31,29 @@ export default function Header() {
   const getLogo = () => {
     if (pathname === '/anthem') {
       return <div className="">
-      <img src={AnthemLogo.src} alt="The Forge Logo" className="w-32 lg:w-52 h-auto margin-10 absolute top-2 md:top-8 left-2 md:left-4" />
+      <Image src={AnthemLogo.src} alt="The Forge Logo" width={208} height={108} className="w-32 lg:w-42 h-auto margin-10 absolute top-2 lg:top-6 left-2 lg:left-4" />
       </div>;
     } else if (pathname === '/the-collective') {
       return <div className="">
-      <img src={NewLogo1.src} alt="The Forge Logo" className="w-32 lg:w-52 h-auto margin-10 absolute -top-6 left-0" />
+      <Image src={NewLogo1.src} alt="The Forge Logo" width={208} height={108} className="w-32 lg:w-40 h-auto margin-10 absolute -top-6 left-0" />
       </div>;
     } else if (pathname === '/the-forge') {
       return <div className="">
-      <img src={NewLogo.src} alt="The Forge Logo" className="w-32 lg:w-52 h-auto margin-10 absolute -top-6 left-0" />
+      <Image src={NewLogo.src} alt="The Forge Logo" width={208} height={108} className="w-32 lg:w-40 h-auto margin-10 absolute -top-6 left-0" />
       </div>;
     } else if (pathname === '/the-vault') {
       return <div className="">
-      <img src={VaultLogo.src} alt="The Forge Logo" className="w-32 lg:w-52 h-auto margin-10 absolute -top-4 left-0" />
+      <Image src={VaultLogo.src} alt="The Forge Logo" width={208} height={108} className="w-32 lg:w-40 h-auto margin-10 absolute -top-6 left-0" />
       </div>;
     } else {
       return <div className="">
-        <img src={NewLogo.src} alt="The Forge Logo" className="w-32 lg:w-52 fill h-auto margin-10 absolute -top-6 left-0" />
+        <Image src={NewLogo.src} alt="The Forge Logo" width={208} height={108} className="w-32 lg:w-40 fill h-auto margin-10 absolute -top-6 left-0" />
         </div>;
     }
   };
 
   return (
-    <header className={`sticky top-0 z-50 h-20 lg:h-40 w-full ${getBackgroundColor()} backdrop-blur-sm opacity-95`}>
+    <header className={`sticky top-0 z-50 h-20 lg:h-28 w-full ${getBackgroundColor()} backdrop-blur-sm opacity-95`}>
       <section className="p-2 pl-6 flex justify-between items-center h-full">
           <div className={`${aoboshiOne.className} text-4xl lg:text-5xl uppercase  p-2 flex justify-center items-center h-full`}>
             {getLogo()}
@@ -64,7 +64,7 @@ export default function Header() {
           data-aos-duration="800"
           data-aos-once="true"
         >
-          <ul className="hidden lg:flex justify-end items-center space-x-8 pt-16">
+          <ul className="hidden lg:flex justify-end items-center space-x-8 pt-4">
             <ElevatorLink linkTo="/" section="" number="R" name="Roof Top" subtext="Main Page" />
             <ElevatorLink id="1" linkTo="/anthem" section="anthem" number="3" name="Anthem" subtext="Third Floor" />
             <ElevatorLink id="2" linkTo="/the-collective" section="the-collective" number="2" name="The Collective" subtext="Second Floor" />
