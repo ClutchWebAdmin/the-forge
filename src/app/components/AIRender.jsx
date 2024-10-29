@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AIRender({ photo }) {
   return (
-    <div className="h-full max-h-[250px]">
+    <div className="h-full">
       <Image
       src={photo}
       alt="sample rendering of space"

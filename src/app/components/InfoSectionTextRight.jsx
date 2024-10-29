@@ -39,14 +39,14 @@ export default function InfoSectionTextRight({
         className={`flex-1 flex flex-col gap-6 ${bottomBackgroundColor} w-full h-auto p-10`}
       >
         <h4
-          className="text-2xl xl:text-3xl border-b pb-2 w-fit font-medium"
+          className="text-2xl xl:text-4xl border-b pb-2 w-fit font-medium"
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-once="true"
         >
           {title}
         </h4>
-        <div className={`text-sm lg:text-base xl:text-xl ${isLongText ? "columns-4 gap-4" : "columns-1"} `}
+        <div className={`text-sm lg:text-base xl:text-2xl ${isLongText ? "columns-4 gap-4" : "columns-1"} `}
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-once="true">
@@ -58,7 +58,7 @@ export default function InfoSectionTextRight({
           <a
             href={websiteLink}
             target="_blank"
-            className="flex flex-row gap-2 items-center text-lg lg:text-xl hover:underline decoration-1 underline-offset-4"
+            className="flex flex-row gap-2 items-center text-lg lg:text-2xl hover:underline decoration-1 underline-offset-4 font-semibold text-blue-300 text-outline"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-once="true"
