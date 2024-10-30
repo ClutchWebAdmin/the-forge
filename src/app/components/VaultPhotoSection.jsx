@@ -23,26 +23,16 @@ export default function VaultPhotoSection({ sectionId, sectionBId }) {
   
   return (
 
-        // <div className="grid grid-cols-2 gap-4 lg:w-2/5 items-center justify-center p-4 bg-vaultPurple-light">
-        // <div className="grid grid-rows-2 gap-4 md:gap-2 bg-vaultPurple-light p-2 rounded-md h-full max-h-[500px] ">
-        //     <AIRender photo={vault1} />
-        //     <AIRender photo={vault3} />
-        // </div>
-        // <div className="bg-vaultPurple-light p-2 rounded-md w-full h-full max-h-[500px] flex items-center justify-center">
-        //   <AIRender photo={vault3}/>
-        // </div>
-        // </div>
-
-<div className="grid grid-cols-2 gap-4 lg:w-2/5 items-center justify-center p-4 bg-vaultPurple-light">
-<div className="grid grid-rows-2 gap-4 md:gap-2 bg-vaultPurple-light p-2 rounded-md h-full max-h-[500px] ">
-  {photos.slice(0, 2).map((photo, index) => (
-    <AIRender key={index} photo={photo} />
-  ))}
-</div>
-<div className="bg-vaultPurple-light p-2 rounded-md w-full h-full max-h-[500px] flex items-center justify-center">
-  {photos[2] && <AIRender photo={photos[2]} />}
-</div>
-</div>
+    <div className="grid grid-cols-2 gap-4 lg:w-2/5 items-center justify-center p-4 bg-vaultPurple-light">
+      <div className="grid grid-rows-2 gap-4 md:gap-2 bg-vaultPurple-light p-2 rounded-md h-full max-h-[500px] ">
+        {photos.slice(0, 2).map((photo, index) => (
+          <AIRender key={index} photo={photo} />
+        ))}
+      </div>
+      <div className="bg-vaultPurple-light p-2 rounded-md w-full h-full max-h-[500px] flex items-center justify-center">
+        {photos[2] && <AIRender photo={photos[2]} />}
+      </div>
+    </div>
 
 
   );

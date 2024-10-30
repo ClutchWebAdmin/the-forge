@@ -1,6 +1,11 @@
 import AnthemPhotoSection from "../components/AnthemPhotoSection";
 import InfoSectionTextLeft from "../components/InfoSectionTextLeft";
 import InfoSectionTextRight from "../components/InfoSectionTextRight";
+import AIRender from "../components/AIRender";
+import anthem1 from "../../../public/images/Anthem-Office-View.jpg";
+import anthem2 from "../../../public/images/Anthem-Office-View-2.PNG";
+import anthem3 from "../../../public/images/Anthem-3rd-Floor.PNG";
+import Image from "next/image";
 
 export default function Anthem() {
     return (
@@ -23,7 +28,7 @@ export default function Anthem() {
                         />
                 <AnthemPhotoSection sectionId="section1" sectionBId="section1"/>
             </div>
-            {/* <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col md:flex-row">
                 <InfoSectionTextRight 
                     eyebrowText="Tax & Business Advisory Firm"
                                 headingText="Anthem"
@@ -79,7 +84,19 @@ export default function Anthem() {
                                 floorNumber="3"
                             />
                 <AnthemPhotoSection sectionId="section4" sectionBId="section4" className="hidden " />
-            </div> */}
+            </div>
+            <div className="bg-dpwBlue-medium p-5 rounded-md w-full grid grid-cols-3 gap-4 flex items-center justify-center lg:h-1/2"> 
+                <Image src={anthem1.src} alt="Anthem Image" width={208} height={108} className="w-full fill h-2/3 rounded-md" />
+                <video
+                    className="object-cover w-full h-2/3 rounded-md"
+                    src="/images/Anthem-Layout-Vid.mp4" // Path to your video file
+                    loop
+                    autoPlay
+                    muted
+                    playsInline // Helps autoplay on mobile devices
+                />
+                <Image src={anthem3.src} alt="Anthem Image" width={208} height={108} className="w-full fill h-2/3 rounded-md" />
+            </div>
         </section>
     );
 }
