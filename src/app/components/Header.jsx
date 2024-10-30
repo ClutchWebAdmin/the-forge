@@ -9,6 +9,7 @@ import NewLogo1 from "../../../public/logos/The-Collective-Final2.png"
 import VaultLogo from "../../../public/logos/The_Vault_Transparent.png"
 import AnthemLogo from "../../../public/logos/Anthem-Logo.png"
 import Image from "next/image";
+import { MdArrowDownward } from "react-icons/md";
 
 export default function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -55,21 +56,30 @@ export default function Header() {
   return (
     <header className={`sticky top-0 z-50 h-20 lg:h-28 w-full ${getBackgroundColor()} backdrop-blur-sm opacity-95`}>
       <section className="p-2 pl-6 flex justify-between items-center h-full">
-          <div className={`${aoboshiOne.className} text-4xl lg:text-5xl uppercase  p-2 flex justify-center items-center h-full`}>
+          <div className={`${aoboshiOne.className} text-4xl lg:text-5xl uppercase  p-2 flex justify-between items-center h-full`}>
             {getLogo()}
           </div>
+
+          <div className="hidden lg:flex flex-end w-1/2 justify-center items-center space-x-8 rounded-b-sm rounded-b-lg animate-slideIn absolute top-0 right-0"> 
+            <MdArrowDownward className="text-2xl text-amber-800 justify-self-start self-center animate-pulseArrow animate-colorChange" />
+            <MdArrowDownward className="text-2xl text-amber-700 justify-self-start self-center animate-pulseArrow animate-colorChange" />
+            <p className="text-2xl text-amber-800 justify-self-center self-center animate-colorChange">Explore the Other Floors!</p>
+            <MdArrowDownward className="text-2xl text-amber-700 justify-self-end self-center animate-pulseArrow animate-colorChange" />
+            <MdArrowDownward className="text-2xl text-amber-800 justify-self-end self-center animate-pulseArrow animate-colorChange" />
+          </div>
+          
         <nav
-          className="space-x-4 text-forgeBrown text-sm lg:text-md xl:text-lg font-medium flex-grow h-full"
+          className="space-x-4 text-forgeBrown text-sm lg:text-md xl:text-lg font-medium flex-grow h-full pt-8"
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-once="true"
         >
-          <ul className="hidden lg:flex justify-end items-center space-x-8 pt-4">
+          <ul className="hidden lg:flex justify-end items-center space-x-8">
             <ElevatorLink linkTo="/" section="" number="R" name="Roof Top" subtext="Main Page" />
             <ElevatorLink id="1" linkTo="/anthem" section="anthem" number="3" name="Anthem" subtext="Third Floor" />
             <ElevatorLink id="2" linkTo="/the-collective" section="the-collective" number="2" name="The Collective" subtext="Second Floor" />
             <ElevatorLink id="3" linkTo="/the-forge" section="the-forge" number="1" name="The Forge" subtext="Ground Floor" />
-            <ElevatorLink id="4" linkTo="/the-vault" section="the-vault" number="B" name="The Vault" subtext="Basement Floor"/>
+            <ElevatorLink id="4" linkTo="/the-vault" section="the-vault" number="B" name="The Vault" subtext="Lowest Floor"/>
           </ul>
 
           {/* Pass the mobile menu toggle and state */}

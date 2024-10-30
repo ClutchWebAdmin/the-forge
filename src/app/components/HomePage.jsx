@@ -135,6 +135,62 @@ export default function HomePage() {
           generations to come.
         </p>
       </div>
+      <div className=" w-full pt-20">
+        <div
+        className="flex flex-col order-2 lg:order-1"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-once="true">
+        
+          <div className="flex flex-col sm:flex-row justify-between gap-3 md:gap-4 lg:gap-5">
+            <div className="flex md:block justify-between">
+              <div className="flex flex-col col-span-full lg:col-span-5 pb-2 pr-2">
+                <h6 className="uppercase text-sm lg:text-lg text-forgeOrange-light">
+                  Name
+                </h6>
+                <p className="text-sm lg:text-xl">The Forge</p>
+              </div>
+
+              
+
+              <div className="flex flex-col col-span-full lg:col-span-3 pb-2 pr-2">
+                <h6 className="uppercase text-sm text-forgeOrange-light lg:text-lg">
+                  Address
+                </h6>
+                <p className="text-sm lg:text-xl">285 Liberty Street</p>
+              </div>
+
+              <div className="flex flex-col lg:col-span-2 pb-2 pr-2">
+                <h6 className="uppercase text-sm text-forgeOrange-light lg:text-lg">
+                  City
+                </h6>
+                <p className="text-sm lg:text-xl">Salem</p>
+              </div>
+
+              <div className="flex flex-col lg:col-span-2 pb-2 pr-2">
+                <h6 className="uppercase text-sm text-forgeOrange-light lg:text-lg">
+                  State
+                </h6>
+                <p className="text-sm lg:text-xl">Oregon</p>
+              </div>
+
+              <div className="flex flex-col lg:col-span-2 pb-2 pr-2">
+                <h6 className="uppercase text-sm text-forgeOrange-light lg:text-lg">
+                  Zip Code
+                </h6>
+                <p className="text-sm lg:text-xl">97301</p>
+              </div>
+            </div>
+            
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2824.081984705924!2d-123.04104102339316!3d44.94200127107028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54bfff0d1bde0df7%3A0x5aa28f2a05aaa1fa!2s285%20Liberty%20St%20NE%2C%20Salem%2C%20OR%2097301!5e0!3m2!1sen!2sus!4v1730225839465!5m2!1sen!2sus"
+              className="h-[400px] border-4 rounded-3xl border-white flex justify-end w-full md:w-1/2  object-cover shadow-inner shadow-white shadow-md"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        </div>
     </section>
   );
 }

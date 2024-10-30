@@ -45,6 +45,27 @@ module.exports = {
       textShadow: {
         'outline': '1px 1px 2px black',  // You can customize this value
       },
+      keyframes: {
+        slideIn: {
+          '0%': { transform: 'translateY(-100%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        pulseArrow: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(5px)' },
+        },
+        colorChange: {
+          '0%': { color: '#f97316' }, // forgeOrange-light
+          '33%': { color: '#ffbf00' }, // custom amber color
+          '66%': { color: '#fdba74' }, // light blush
+          '100%': { color: '#f97316' }, // back to forgeOrange-light
+        },
+      },
+      animation: {
+        slideIn: 'slideIn 1s ease-out forwards',
+        pulseArrow: 'pulseArrow 0.5s ease-in-out infinite',
+        colorChange: 'colorChange 3s ease-in-out infinite',
+      },
     },
   },
   plugins: [
