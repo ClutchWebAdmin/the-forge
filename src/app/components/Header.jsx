@@ -54,7 +54,7 @@ export default function Header() {
   };
 
   return (
-    <header className={`sticky top-0 z-50 h-20 lg:h-28 w-full ${getBackgroundColor()} backdrop-blur-sm opacity-95`}>
+    <header className={`sticky top-0 z-50 h-20 lg:h-28 w-full ${getBackgroundColor()} backdrop-blur-sm bg-opacity-95`}>
       <section className="p-2 pl-6 flex justify-between items-center h-full">
           <div className={`${aoboshiOne.className} text-4xl lg:text-5xl uppercase  p-2 flex justify-between items-center h-full`}>
             {getLogo()}
