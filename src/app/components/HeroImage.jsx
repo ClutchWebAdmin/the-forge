@@ -11,6 +11,7 @@ export default function HeroImage() {
         priority
         placeholder="blur"
       />
+      
     </div>
   );
 }

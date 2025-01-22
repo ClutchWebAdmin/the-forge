@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { aoboshiOne } from "../styles/fonts";
+import InstagramFeed from "./InstagramFeed";
 
 export default function HomePage() {
   return (
@@ -135,7 +136,34 @@ export default function HomePage() {
           generations to come.
         </p>
       </div>
+
+      <div
+  className="w-full flex flex-col items-center py-10 lg:py-20"
+  data-aos="fade-up"
+  data-aos-duration="1000"
+  data-aos-once="true"
+>
+  <h2
+    className={`${aoboshiOne.className} text-2xl lg:text-5xl text-center text-forgeOrange-light font-bold tracking-wide mb-6`}
+  >
+    Stay Updated with Our Progress and News
+  </h2>
+  <p className="text-center text-sm lg:text-base text-forgeGray max-w-3xl mb-10">
+    Follow our journey as we bring new life to Liberty Plaza! Stay connected
+    to see the latest updates, milestones, and exciting news about The Forge.
+  </p>
+  <div className="w-full flex justify-center">
+    <InstagramFeed />
+  </div>
+</div>
+
+
       <div className=" w-full pt-20">
+      <h2
+    className={`${aoboshiOne.className} text-2xl lg:text-5xl text-center text-forgeOrange-light font-bold tracking-wide mb-8`}
+  >
+    Take a look for Yourself
+  </h2>
         <div
         className="flex flex-col order-2 lg:order-1"
         data-aos="fade-up"
