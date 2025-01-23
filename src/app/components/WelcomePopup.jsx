@@ -45,7 +45,15 @@ export default function WelcomePopup()
             <p className="text-lg font-bold mt-4 text-outline text-white ">
             We’re so excited to have Clink! join The Collective!
             </p>
-            <button
+            <a 
+              className="text-lg font-bold mt-4 text-outline text-blue-500" 
+              href="https://clinksalem.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              https://clinksalem.com/
+            </a>
+                        <button
               onClick={closeModal}
               className="mt-4 px-4 py-2 bg-collectivePink-dark text-white rounded hover:bg-collectivePink-light hover:text-collectivePink-dark transition shadow-md shadow-white"
             >
