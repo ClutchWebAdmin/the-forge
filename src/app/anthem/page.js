@@ -85,7 +85,7 @@ export default function Anthem() {
                             />
                 <AnthemPhotoSection sectionId="section4" sectionBId="section4" className="hidden " />
             </div>
-            <div className="bg-dpwBlue-medium p-5 rounded-md w-full grid grid-cols-3 gap-4 flex items-center justify-center lg:h-1/2"> 
+            {/* <div className="bg-dpwBlue-medium p-5 rounded-md w-full grid grid-cols-3 gap-4 flex items-center justify-center lg:h-1/2"> 
                 <Image src={anthem1.src} alt="Anthem Image" width={208} height={108} className="w-full fill h-2/3 rounded-md" />
                 <video
                     className="object-cover w-full h-2/3 rounded-md"
@@ -96,7 +96,7 @@ export default function Anthem() {
                     playsInline // Helps autoplay on mobile devices
                 />
                 <Image src={anthem3.src} alt="Anthem Image" width={208} height={108} className="w-full fill h-2/3 rounded-md" />
-            </div>
+            </div> */}
         </section>
     );
 }

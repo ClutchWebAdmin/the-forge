@@ -4,6 +4,7 @@ import anthem3 from "../../../public/images/Anthem-3rd-Floor.PNG";
 import anthem4 from "../../../public/images/Anthem-Featured-Photos-1.png";
 import anthem5 from "../../../public/images/Anthem-Featured-Photos-2.png";
 import anthem6 from "../../../public/images/Anthem-Featured-Photos-3.png";
+import anthem7 from "../../../public/images/Anthem-front-desk-for-website.png";
 import AIRender from "./AIRender";
 import AnthemVideo from "./AnthemVideo";
 import Image from "next/image";
@@ -12,7 +13,7 @@ export default function AnthemPhotoSection({ sectionId, sectionBId }) {
 
   const getPhotos = () => {
     if (sectionId === "section2") {
-      return [anthem4,];
+      return [anthem7,];
     } else if (sectionId === "section3") {
       return [anthem5,];
     } else {

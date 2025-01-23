@@ -5,15 +5,15 @@ import SocialIcons from "./components/SocialIcons";
 
 
 export const metadata = {
-  title: "The Forge - Coming soon to 285 Liberty St",
+  title: "The Forge - Revitalizing Downtown Salem, Oregon",
   description:
-    "The Forge is a remarkable redevelopment project in downtown Salem's former Liberty Plaza building",
+    "The Forge is a transformative redevelopment project in downtown Salem's historic Liberty Plaza, offering premium retail, restaurant, salon, and office spaces in a vibrant business hub.",
   keywords:
-    "Salem Oregon commercial real estate, retail space, restaurant space, salon space, spas, downtown salem, commercial, food, entertainment, central business district, parking garage, Liberty Plaza Salem redevelopment, downtown Salem real estate opportunities",
+    "Salem Oregon commercial real estate, retail spaces Salem Oregon, restaurant spaces Salem Oregon, salon suites Salem Oregon, downtown Salem redevelopment, Liberty Plaza Salem, business leasing Salem Oregon, Salem Oregon investment opportunities, parking garage Salem Oregon, food and entertainment Salem Oregon",
   openGraph: {
-    title: "The Forge",
+    title: "The Forge - Revitalizing Downtown Salem",
     description:
-      "The Forge is a remarkable redevelopment project in downtown Salem's former Liberty Plaza building.",
+      "Discover The Forge, a redevelopment project breathing new life into downtown Salem's Liberty Plaza. Explore retail, restaurant, salon, and office spaces designed to foster community and growth.",
     siteName: "The Forge",
     type: "website",
     locale: "en_US",
@@ -21,7 +21,11 @@ export const metadata = {
     images: [
       {
         url: "https://forgesalem.com/images/og-image.png",
-        alt: "The Forge",
+        alt: "The Forge - Revitalizing Downtown Salem",
+      },
+      {
+        url: "https://forgesalem.com/images/forge-front.jpg",
+        alt: "Front view of The Forge redevelopment project",
       },
     ],
   },
@@ -39,23 +43,33 @@ export const metadata = {
       postalCode: "97301",
       addressCountry: "US",
     },
-    description: "The Forge is a remarkable redevelopment project in downtown Salem's former Liberty Plaza building.",
+    description:
+      "The Forge is a transformative redevelopment project in downtown Salem's historic Liberty Plaza, creating a vibrant hub for retail, dining, and professional services.",
+    sameAs: [
+      "https://www.instagram.com/theforgesalem",
+      "https://www.facebook.com/TheForgeSalem",
+    ], // Link your social media accounts
   },
   images: [
     {
       url: "https://forgesalem.com/images/og-image.png",
-      alt: "The Forge redevelopment project in Salem",
+      alt: "The Forge - Revitalizing Downtown Salem",
     },
     {
       url: "https://forgesalem.com/images/forge-front.jpg",
-      alt: "Front view of The Forge in downtown Salem",
+      alt: "Front view of The Forge redevelopment project",
+    },
+    {
+      url: "https://forgesalem.com/images/interior-view.jpg",
+      alt: "Interior view of The Forge in Salem",
     },
   ],
   robots: {
-    index: true,   // Allows the page to be indexed.
-    follow: true,  // Allows search engines to follow the links.
+    index: true,
+    follow: true,
   },
 };
+
 
 export default function Home() {
   
