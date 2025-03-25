@@ -9,7 +9,7 @@ export const metadata = {
   description:
     "The Forge is a transformative redevelopment project in downtown Salem's historic Liberty Plaza, offering premium retail, restaurant, salon, and office spaces in a vibrant business hub.",
   keywords:
-    "Salem Oregon commercial real estate, retail spaces Salem Oregon, restaurant spaces Salem Oregon, salon suites Salem Oregon, downtown Salem redevelopment, Liberty Plaza Salem, business leasing Salem Oregon, Salem Oregon investment opportunities, parking garage Salem Oregon, food and entertainment Salem Oregon",
+    "The Forge, Liberty Plaza Salem, downtown Salem redevelopment, Salem Oregon commercial real estate, retail and restaurant spaces Salem, salon suites for beauty professionals, rooftop event venue Salem, bourbon and wine lounge, tenant leasing Salem Oregon, business spaces downtown Salem, mixed-use development, food and entertainment Salem Oregon, Salem Oregon investment opportunities",
   openGraph: {
     title: "The Forge - Revitalizing Downtown Salem",
     description:
