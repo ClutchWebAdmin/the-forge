@@ -15,20 +15,19 @@ import AIRender from "./AIRender";
 import Image from "next/image";
 
 export default function CollectivePhotoSection({ sectionId, sectionBId }) {
-  
   const sectionImages = {
-    section1: [collective1,  ],
-    section2: [collective3,  ],
-    section3: [collective5,  ],
-    section4: [collective4,  ],
+    section1: [collective1],
+    section2: [collective3],
+    section3: [collective5],
+    section4: [collective4],
   };
-  const images = sectionImages[sectionId] || sectionImages.section1; // Default to section1 if sectionId is not found
+  const images = sectionImages[sectionId] || sectionImages.section1;
 
   const sectionTall = {
-    section1: [collectiveT1, ],
-    section2: [collectiveT2, ],
-    section3: [collectiveT1, ],
-    section4: [collectiveT2, ],
+    section1: [collectiveT1],
+    section2: [collectiveT2],
+    section3: [collectiveT1],
+    section4: [collectiveT2],
   };
   const imagesTall = sectionTall[sectionBId] || sectionTall.section1;
 
@@ -37,13 +36,20 @@ export default function CollectivePhotoSection({ sectionId, sectionBId }) {
       {/* Left side with two equal images stacked */}
       <div className="h-full gap-4 md:gap-2 bg-collectivePink-light p-2 rounded-md flex flex-col">
         {images.map((photo, index) => (
-          <Image
-            key={index}
-            src={photo}
-            alt={`photo ${index}`}
-            className="w-full h-full rounded-md object-cover"
-            quality={60}
-          />
+          <div key={index} className="relative w-full h-64 rounded-md overflow-hidden">
+            <Image
+              src={photo}
+              alt={`photo ${index}`}
+              className="w-full h-full object-cover blur-md"
+              quality={60}
+              fill
+              sizes="100%"
+              style={{ objectFit: "cover" }}
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-black/40">
+              <span className="text-white text-lg font-semibold">Images Coming Soon</span>
+            </div>
+          </div>
         ))}
       </div>
     </div>

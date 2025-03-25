@@ -37,7 +37,7 @@ export default function TheCollective() {
                 <CollectivePhotoSection sectionId="section2" sectionBId="section2" className="hidden " />
             </div>
 
-            <div className="lg:flex flex-col bg-collectivePink-light justify-center items-center p-5">
+            {/* <div className="lg:flex flex-col bg-collectivePink-light justify-center items-center p-5">
                 <h4
                 className="text-3xl xl:text-4xl text-collectivePink-dark border-b border-collectivePink-dark pb-2 px-2 w-fit font-medium w-full text-center mb-4"
                 data-aos="fade-up"
@@ -47,7 +47,7 @@ export default function TheCollective() {
                 Take A Look
                 </h4>
                 <Carousel />
-            </div>
+            </div> */}
 
             <div className="flex flex-col md:flex-row">
                 <InfoSectionTextRight

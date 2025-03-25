@@ -31,13 +31,18 @@ export default function ForgePhotoSection({ sectionId, sectionBId }) {
     {/* Left side with two equal images stacked */}
     <div className="grid grid-cols-2 h-full gap-4 md:gap-2 bg-forgeRed-light p-2 rounded-md flex flex-col">
       {images.map((photo, index) => (
-        <Image
-          key={index}
-          src={photo}
-          alt={`photo ${index}`}
-          className="w-full h-full rounded-md object-cover"
-          quality={60}
-        />
+        <div key={index} className="relative w-full h-64 rounded-md overflow-hidden">
+          <Image
+            key={index}
+            src={photo}
+            alt={`photo ${index}`}
+            className="w-full h-full rounded-md object-cover blur-md"
+            quality={60}
+          />
+        <div className="absolute inset-0 flex items-center justify-center bg-black/40">
+        <span className="text-white text-lg font-semibold">Images Coming Soon</span>
+      </div>
+    </div>
       ))}
     </div>
   </div>
