@@ -2,6 +2,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { archivoBlack } from "../styles/fonts";
+import { lexend } from "../styles/fonts";
 
 export default function ElevatorLink({ linkTo, number, name,  subtext, activeSection, section}) {
   const pathname = usePathname()
@@ -15,7 +17,7 @@ export default function ElevatorLink({ linkTo, number, name,  subtext, activeSec
     } else if (pathname === '/the-vault') {
       return 'text-vaultPurple-light'; // The Vault page color
     } else {
-      return 'text-forgeGray'; // Default color
+      return 'text-new-light'; // Default color
     }
   };
 
@@ -29,7 +31,7 @@ export default function ElevatorLink({ linkTo, number, name,  subtext, activeSec
     } else if (pathname === '/the-vault') {
       return 'text-forgeBrown'; // The Vault page color
     } else {
-      return 'text-forgeOrange-medium'; // Default color
+      return 'text-black'; // Default color
     }
   };
 
@@ -43,7 +45,7 @@ export default function ElevatorLink({ linkTo, number, name,  subtext, activeSec
     } else if (pathname === '/the-vault') {
       return 'border-vaultPurple-light'; // The Vault page color
     } else {
-      return 'border-forgeOrange-dark'; // Default color
+      return 'border-new-light'; // Default color
     }
   };
 
@@ -54,14 +56,14 @@ export default function ElevatorLink({ linkTo, number, name,  subtext, activeSec
   return (
     <li className={`p-2 rounded-2xl group`}>
       <Link href={linkTo} className="flex flex-row items-center gap-3 py-2">
-      <div className={`flex justify-center items-center w-10 h-10 font-semibold border ${getHomeColor()} ${getBorderColor()} ${getShadowColor()} shadow-inner rounded-full transition-colors duration-300 ${
+      {/* <div className={`flex justify-center items-center w-10 h-10 font-semibold border ${getHomeColor()} ${getBorderColor()} ${getShadowColor()} shadow-inner rounded-full transition-colors duration-300 ${
           pathname === linkTo ? 'bg-amber-300' : 'group-hover:bg-amber-300 group-hover:shadow-black'
         }`}>
           {number}
-        </div>
+        </div> */}
         <div className="flex flex-col gap-0.5 leading-none">
-          <p className={`text-medium ${getHomeColor()} `}>{name}</p>
-          <p className={`text-xs ${getTextColor()}`}>{subtext}</p>
+          <p className={`text-sm ${getHomeColor()} ${lexend.className} `}>{name}</p>
+          <p className={`text-xs ${getTextColor()} ${lexend.className}`}>{subtext}</p>
         </div>
       </Link>
     </li>

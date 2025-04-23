@@ -1,16 +1,16 @@
 import Link from "next/link";
-import { aoboshiOne } from "../styles/fonts";
+import { lexend } from "../styles/fonts";
 import InstagramFeed from "./InstagramFeed";
 
 export default function HomePage() {
   return (
     <section
       id="overview"
-      className="bg-black p-5 lg:p-10 flex flex-col gap-4 lg:gap-8 justify-center items-center text-forgeGray"
+      className="bg-white p-5 lg:p-10 flex flex-col gap-4 lg:gap-8 justify-center items-center text-black"
     >
       <div className="flex flex-col gap-2 lg:gap-4 text-center">
         <h1
-          className={`${aoboshiOne.className} tracking-wide font-extrabold text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-forgeOrange-light drop-shadow drop-shadow-lg shadow-white`}
+          className={`${lexend.className} tracking-wide text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-new-light drop-shadow drop-shadow-lg shadow-white`}
         >
           Reviving Liberty Plaza
         </h1>
@@ -31,7 +31,7 @@ export default function HomePage() {
         </p>
 
         <div className="col-span-full grid lg:grid-cols-4">
-          <div className="lg:border-l lg:border-b lg:border-forgeOrange-light lg:pl-4 lg:pb-4 lg:pt-4 lg:text-justify">
+          <div className="lg:border-l lg:border-b lg:border-new-light lg:pl-4 lg:pb-4 lg:pt-4 lg:text-justify">
             <p
               data-aos="fade-down"
               data-aos-duration="800"
@@ -100,7 +100,7 @@ export default function HomePage() {
         </div>
 
         <div className="col-span-full grid lg:grid-cols-4 lg:pb-8">
-          <div className="lg:col-start-4 lg:border-l lg:border-b lg:border-forgeOrange-light lg:pl-4 lg:pb-4 lg:pt-4 lg:text-justify">
+          <div className="lg:col-start-4 lg:border-l lg:border-b lg:border-new-light lg:pl-4 lg:pb-4 lg:pt-4 lg:text-justify">
             <p
               data-aos="fade-down"
               data-aos-duration="800"
@@ -146,16 +146,16 @@ export default function HomePage() {
 
 
   
-<div className="w-full flex flex-col lg:flex-row gap-0 overflow-hidden  border-t border-forgeOrange-light shadow-md mt-10">
+<div className="w-full flex flex-col lg:flex-row gap-0 overflow-hidden  border-t border-new-light shadow-md mt-10">
   {/* Instagram Feed */}
-  <div className="w-full lg:w-2/3 bg-black p-6 flex flex-col items-center justify-center text-center gap-6">
+  <div className="w-full lg:w-2/3 bg-new-light p-6 flex flex-col items-center justify-center text-center gap-6">
     <div>
       <h2
-        className={`${aoboshiOne.className} text-2xl lg:text-4xl text-forgeOrange-light font-bold tracking-wide mb-4`}
+        className={`${lexend.className} text-2xl lg:text-4xl text-white  tracking-wide mb-4`}
       >
         Stay Updated with Our Progress and News
       </h2>
-      <p className="text-sm lg:text-base text-forgeGray max-w-2xl mx-auto">
+      <p className="text-sm lg:text-base text-black max-w-2xl mx-auto">
         Follow our journey as we bring new life to Liberty Plaza! Stay connected to see the latest updates, milestones, and exciting news about The Forge.
       </p>
     </div>
@@ -166,18 +166,18 @@ export default function HomePage() {
   </div>
 
 {/* Sidebar Map Section */}
-<div className="w-full lg:w-1/3 bg-black/90 p-6 flex flex-col justify-start border-t border-forgeOrange-light lg:border-t-0 lg:border-l text-center">
+<div className="w-full lg:w-1/3 bg-black/90 p-6 flex flex-col justify-start border-t border-new-light lg:border-t-0 lg:border-l text-center gap-6">
   <h2
-    className={`${aoboshiOne.className} text-2xl lg:text-4xl text-forgeOrange-light font-bold tracking-wide mb-4`}
+    className={`${lexend.className} text-2xl lg:text-4xl text-new-light  tracking-wide`}
   >
     Visit The Forge
   </h2>
 
-  <p className="text-sm lg:text-base text-forgeGray mb-4">
+  <p className="text-sm lg:text-base text-white">
     285 Liberty Street, Salem, Oregon 97301
   </p>
 
-  <div className=" mx-auto rounded-xl overflow-hidden border border-white shadow-inner shadow-white m-6">
+  <div className=" mx-auto rounded-xl overflow-hidden border border-white shadow-inner shadow-white m-4">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2824.081984705924!2d-123.04104102339316!3d44.94200127107028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54bfff0d1bde0df7%3A0x5aa28f2a05aaa1fa!2s285%20Liberty%20St%20NE%2C%20Salem%2C%20OR%2097301!5e0!3m2!1sen!2sus!4v1730225839465!5m2!1sen!2sus"
       className="w-full h-[300px]"
