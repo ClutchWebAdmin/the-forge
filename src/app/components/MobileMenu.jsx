@@ -31,7 +31,7 @@ export default function MobileMenu({ isMobileMenuOpen, setMobileMenuOpen, getBac
     <>
       {/* Menu button when closed */}
       
-    <div className={isMobileMenuOpen ? "hidden" : "lg:hidden flex absolute top-2 left-2 flex-row gap-4 text-forgeGray"}>
+    <div className={isMobileMenuOpen ? "hidden" : "lg:hidden flex absolute top-2 right-2 flex-row gap-4 text-forgeGray"}>
         <button
         id="open-mobile-menu"
         aria-label="open-mobile-menu"
@@ -50,7 +50,7 @@ export default function MobileMenu({ isMobileMenuOpen, setMobileMenuOpen, getBac
           data-aos="slide-down"
           data-aos-duration="800"
           data-aos-once="true"
-          className={`lg:hidden z-[9999] transition duration-300 text-forgeGray hover:text-vaultPurple-dark p-2 fixed top-2 left-2 animate__animated animate__rotateIn`}
+          className={`lg:hidden z-[9999] transition duration-300 text-forgeGray hover:text-vaultPurple-dark p-2 fixed top-2 right-2 animate__animated animate__rotateIn`}
         >
           <AiOutlineClose className="h-8 w-10" />
         </button>
