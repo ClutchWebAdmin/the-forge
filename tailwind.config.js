@@ -38,6 +38,9 @@ module.exports = {
         blush: {
           light: "#FADADD",  // Light blush color
         },
+        new: {
+          light: "#b7c0c8",
+        }
       },
       aspectRatio: {
         '4/3': '4 / 3',

@@ -4,6 +4,7 @@ import theForgeLogo from "../../../public/logos/the-forge-logo.svg";
 import { MdArrowDownward } from "react-icons/md";
 import NewLogo from "../../../public/logos/The-Forge-inside-orb-on-black.png"
 import { aoboshiOne } from "../styles/fonts";
+import MarlaLogo from "../../../public/logos/MarlaLogo.png";
 
 export default function TheForgeLogo() {
   return (
@@ -14,21 +15,13 @@ export default function TheForgeLogo() {
       data-aos-once="true"
     >
       
-      
+      <div className="">
+              <Image src={MarlaLogo.src} alt="The Forge Logo" width={640} height={108} className="w-32 lg:w-96 fill h-auto  absolute -left-12 -top-24" />
+              </div>
 
-      <p className={`${aoboshiOne.className} text-3xl md:text-4xl lg:text5xl xl:text-6xl font-extrabold text-amber-800 font-medium mb-2 text-outline`}>
-        Coming soon to{" "}
-      </p>
-      <span className={`${aoboshiOne.className} text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-forgeOrange-medium mb-2 text-outline`}>
-          285 Liberty Street
-        </span>
-      <Link
-        href="#overview"
-        className="flex flex-row gap-2 font-medium items-center bg-orange-800 hover:bg-amber-700 transition duration-300 w-fit h-fit text-white px-4 py-2 rounded-md"
-      >
-        Read more
-        <MdArrowDownward />
-      </Link>
+
+
+
     </div>
   );
 }

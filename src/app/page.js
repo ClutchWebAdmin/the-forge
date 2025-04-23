@@ -75,10 +75,11 @@ export default function Home() {
   
   return (
     <main className="flex flex-col">
-      <section id="hero" className="relative h-full bg-forgeGray border-b border-forgeOrange-light">
+      <section id="hero" className="relative h-full bg-forgeGray border-b border-new-light">
+      
         <HeroImage />
-        <SocialIcons placement="header" />
-        <div className="flex p-3 lg:p-5 h-full">
+        {/* <SocialIcons placement="header" /> */}
+        <div className="flex  h-full">
           <div className="flex flex-col lg:flex-row h-full w-full">
             <TheForgeLogo />
           </div>
