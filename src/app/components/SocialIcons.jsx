@@ -4,7 +4,7 @@ export default function SocialIcons({ placement }) {
   if (placement === "header") {
     return (
       <div
-        className="flex flex-row gap-3 text-black absolute top-6 right-10 text-2xl md:text-3xl z-10"
+        className="flex flex-row gap-3 text-white absolute top-6 right-10 text-2xl md:text-8xl z-10"
         data-aos="fade-up"
         data-aos-duration="800"
         data-aos-once="true"
@@ -12,14 +12,14 @@ export default function SocialIcons({ placement }) {
         <a
           href="https://www.facebook.com/people/The-Forge/61557014067513/"
           target="_blank"
-          className="hover:text-amber-700 transition duration-300"
+          className="hover:text-new-light transition duration-300"
         >
           <FaFacebook />
         </a>
         <a
           href="https://www.instagram.com/theforgesalem/"
           target="_blank"
-          className="hover:text-amber-700 transition duration-300"
+          className="hover:text-new-light transition duration-300"
         >
           <FaInstagram />
         </a>
