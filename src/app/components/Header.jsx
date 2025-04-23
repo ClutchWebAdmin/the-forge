@@ -70,18 +70,18 @@ export default function Header() {
           data-aos-duration="800"
           data-aos-once="true"
         >
-          <ul className={` hidden lg:flex justify-start items-center space-x-8 font-archivoBlack`}>
-            <ElevatorLink linkTo="/" section="" number="R" name="MAIN" subtext="HOME | NEWS" />
-            <ElevatorLink id="1" linkTo="/anthem" section="anthem" number="3" name="WEALTH AND FINANCE" subtext="ANTHEM STRATEGISTS | FLOOR 3" />
-            <ElevatorLink id="2" linkTo="/the-collective" section="the-collective" number="2" name="THE WOMEN'S COLLECTIVE" subtext="FLOOR 2" />
-            <ElevatorLink id="3" linkTo="/the-forge" section="the-forge" number="1" name="FOOD, WINE, & RETAIL" subtext="FLOOR 1" />
-            <ElevatorLink id="4" linkTo="/the-vault" section="the-vault" number="B" name="EVENTS & ENTERTAINMENT" subtext="LOWER LEVEL"/>
+          <ul className={` hidden lg:flex justify-between items-center space-x-8 font-archivoBlack`}>
+            <ElevatorLink linkTo="/" section="" number="R" name="MAIN" subtext="Home | News" />
+            <ElevatorLink id="1" linkTo="/anthem" section="anthem" number="3" name="WEALTH AND FINANCE" subtext="Anthem Strategists | Floor 3" />
+            <ElevatorLink id="2" linkTo="/the-collective" section="the-collective" number="2" name="THE WOMEN'S COLLECTIVE" subtext="Floor 2" />
+            <ElevatorLink id="3" linkTo="/the-forge" section="the-forge" number="1" name="FOOD, WINE, & RETAIL" subtext="Floor 1" />
+            <ElevatorLink id="4" linkTo="/the-vault" section="the-vault" number="B" name="EVENTS & ENTERTAINMENT" subtext="Lower Level"/>
           </ul>
 
           {/* Pass the mobile menu toggle and state */}
           <MobileMenu setMobileMenuOpen={setMobileMenuOpen} isMobileMenuOpen={isMobileMenuOpen} getBackgroundColor={getBackgroundColor}/>
         </nav>
-        <SocialIcons placement="header" className=' top-0 lg:-top-6' />
+        
       </section>
     </header>
   );

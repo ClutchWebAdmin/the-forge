@@ -82,6 +82,7 @@ export default function Home() {
         <div className="flex  h-full">
           <div className="flex flex-col lg:flex-row h-full w-full">
             <TheForgeLogo />
+            <SocialIcons placement="header" className=' top-0 lg:-top-6 text-white' />
           </div>
         </div>
       </section>
