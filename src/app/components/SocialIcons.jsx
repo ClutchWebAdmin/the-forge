@@ -4,7 +4,7 @@ export default function SocialIcons({ placement }) {
   if (placement === "header") {
     return (
       <div
-        className="flex flex-row gap-3 text-white absolute top-6 right-10 text-2xl md:text-8xl z-10"
+        className="flex flex-row gap-3 text-white absolute top-3 right-3 lg:top-6 lg:right-10 text-2xl md:text-7xl z-10"
         data-aos="fade-up"
         data-aos-duration="800"
         data-aos-once="true"
