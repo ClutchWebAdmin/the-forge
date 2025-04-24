@@ -6,19 +6,19 @@ export default function HomePage() {
   return (
     <section
       id="overview"
-      className="bg-white p-5 lg:p-10 flex flex-col gap-4 lg:gap-8 justify-center items-center text-black"
+      className={`${lexend.className} bg-white p-5 lg:p-10 flex flex-col gap-4 lg:gap-8 justify-center items-center text-black`}
     >
       <div className="flex flex-col gap-2 lg:gap-4 text-center">
         <h1
-          className={`${lexend.className} tracking-wide text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-new-light drop-shadow drop-shadow-lg shadow-white`}
+          className={`${lexend.className} tracking-wide text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-new-light drop-shadow drop-shadow-lg shadow-white`}
         >
           Reviving Liberty Plaza
         </h1>
-        <h2 className="text-lg md:text-2xl xl:text-3xl font-semibold mt-4">
+        <h2 className="text-lg md:text-xl xl:text-2xl font-semibold mt-4">
           The Birth of The Forge
         </h2>
       </div>
-      <div className="grid lg:grid-cols-4 gap-4 lg:gap-y-0 lg:gap-x-8 text-sm lg:text-base">
+      <div className="grid lg:grid-cols-4 gap-4 lg:gap-y-0 lg:gap-x-8 text-sm lg:text-md">
         <p className="indent-8 col-span-full lg:pb-8">
           In the heart of North Downtown Salem, where Liberty Plaza once stood,
           now rises a beacon of revitalization - The Forge. With a vision to
