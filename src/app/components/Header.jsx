@@ -11,7 +11,8 @@ import AnthemLogo from "../../../public/logos/Anthem-Logo.png"
 import Image from "next/image";
 import MarlaLogo from "../../../public/logos/MarlaLogo.png";
 import { MdArrowDownward } from "react-icons/md";
- import SocialIcons from "./SocialIcons";
+import SocialIcons from "./SocialIcons";
+
 
 export default function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
