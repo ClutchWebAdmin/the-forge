@@ -3,7 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import BackToTopButton from "./components/BackToTopButton";
 import AnimateOnScroll from "./components/AnimateOnScroll";
-import { workSans } from "./styles/fonts";
+import { lexend } from "./styles/fonts";
 import Header from "./components/Header";
 import TheFooter from "./components/TheFooter";
 
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`min-h-svh flex flex-col mx-auto relative ${workSans.className} antialiased`}
+        className={`min-h-svh flex flex-col mx-auto relative ${lexend.className} antialiased`}
       >
         <Header />
         {children}
