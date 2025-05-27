@@ -2,11 +2,24 @@
 import React, { useEffect } from "react";
 
 const InstagramFeed = () => {
+    
   useEffect(() => {
     const script = document.createElement("script");
     script.async = true;
     script.src = "//www.instagram.com/embed.js";
+    script.onload = () => {
+      if (window.instgrm) {
+        window.instgrm.Embeds.process();
+      }
+    };
+
     document.body.appendChild(script);
+
+    return () => {
+      if (script) {
+        document.body.removeChild(script);
+      }
+    };
   }, []);
 
   return (
@@ -22,10 +35,10 @@ const InstagramFeed = () => {
           boxShadow:
             "0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)",
           margin: "10px",
-          maxWidth: "900px", // Increase max width
-          minWidth: "400px", // Ensure minimum size
+          maxWidth: "900px",
+          minWidth: "400px",
           padding: "0",
-          width: "80%", // Take up more width
+          width: "80%",
         }}
       >
         <div style={{ padding: "16px" }}>
