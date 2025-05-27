@@ -26,53 +26,67 @@ export default function HomePage() {
         {/* Left Column: Accordions */}
         <div className="flex flex-col gap-6 lg:col-span-1">
 
-          {[
-            {
-              title: "WEALTH & FINANCE",
-              content:
-                "The top floor is home to Anthem Strategists, a sophisticated environment where financial acumen meets visionary planning.",
-            },
-            {
-              title: "THE WOMEN'S COLLECTIVE",
-              content:
-                "Our female-led sanctuary features salons, wellness studios, and Clink!—a French restaurant re-imagining the art of gathering.",
-            },
-            {
-              title: "FOOD, WINE, & RETAIL",
-              content:
-                "Through our main doors, indulge in a tapestry of taste and style, where specialty coffee, ice cream, and boutique finds await.",
-            },
-            {
-              title: "EVENTS & ENTERTAINMENT",
-              content:
-                "Descending to the lower level, an evolving event space will soon host refined gatherings and exclusive moments.",
-            },
-          ].map((item, index) => (
-            <div key={index} className="border border-gray-300 overflow-hidden">
-            <button
-              onClick={() => toggleAccordion(index)}
-              className="w-full text-left p-4 font-semibold bg-white hover:bg-gray-100 transition"
-            >
-              {item.title}
-            </button>
-            <AnimatePresence initial={false}>
-              {openIndex === index && (
-                <motion.div
-                  key="content"
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: "auto", opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.3, ease: "easeInOut" }}
-                  className="overflow-hidden"
+        {[
+          {
+            title: "WEALTH & FINANCE",
+            content:
+              "The top floor is home to Anthem Strategists, a sophisticated environment where financial acumen meets visionary planning.",
+          },
+          {
+            title: "THE WOMEN'S COLLECTIVE",
+            content:
+              "Our female-led sanctuary features salons, wellness studios, and Clink!—a French restaurant re-imagining the art of gathering.",
+          },
+          {
+            title: "FOOD, WINE, & RETAIL",
+            content:
+              "Through our main doors, indulge in a tapestry of taste and style, where specialty coffee, ice cream, and boutique finds await.",
+          },
+          {
+            title: "EVENTS & ENTERTAINMENT",
+            content:
+              "Descending to the lower level, an evolving event space will soon host refined gatherings and exclusive moments.",
+          },
+        ].map((item, index, array) => {
+          const displayNumber = array.length - 1 - index;
+
+          return (
+            <div key={index} className="relative pr-12"> {/* padding for number space */}
+              {/* Number badge */}
+              <div className="absolute left-full text-xl opacity-50 text-black">
+                {displayNumber}
+              </div>
+
+              <div className="border border-gray-300 overflow-hidden">
+                <button
+                  onClick={() => toggleAccordion(index)}
+                  className="w-full text-center p-4 bg-white hover:bg-gray-100 transition"
                 >
-                  <div className="p-4 whitespace-pre-line bg-white text-gray-800">
-                    {item.content}
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
-          ))}
+                  {item.title}
+                </button>
+
+                <AnimatePresence initial={false}>
+                  {openIndex === index && (
+                    <motion.div
+                      key="content"
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                      className="overflow-hidden"
+                    >
+                      <div className="p-4 whitespace-pre-line bg-white text-gray-800">
+                        {item.content}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            </div>
+          );
+        })}
+
+
         </div>
 
         {/* Right Column: Description and Image */}
@@ -101,14 +115,14 @@ export default function HomePage() {
             src="/images/background-image.jpg"
             alt="Liberty Plaza background"
             fill
-            className="object-cover opacity-10"
+            className="object-cover "
             priority
           />
         </div>
 
-        <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6 p-6 lg:p-12 text-sm lg:text-base backdrop-blur-sm bg-black/30">
+        <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6 p-6 lg:p-12 text-sm lg:text-base ">
           {/* Visit */}
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 bg-gray-700 opacity-70 p-10 m-6">
             <h2 className="text-xl font-bold uppercase text-new-light">Visit</h2>
             <p>OPEN BY APPOINTMENT ONLY</p>
             <p>
@@ -125,13 +139,13 @@ export default function HomePage() {
           </div>
 
           {/* Updates */}
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 bg-gray-700 opacity-70 p-10 m-6">
             <h2 className="text-xl font-bold uppercase text-new-light">Updates</h2>
             <p className="font-semibold">OPENING TO PUBLIC SUMMER 2025</p>
           </div>
 
           {/* Connect */}
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 bg-gray-700 opacity-70 p-10 m-6">
             <h2 className="text-xl font-bold uppercase text-new-light">Connect</h2>
             <p>CONTACT US</p>
             <p>LEASING<br />CONTACT OUR REAL ESTATE PARTNER - TRADITION REP</p>
