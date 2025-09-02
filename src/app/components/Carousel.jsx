@@ -3,28 +3,18 @@
 import { useState } from "react";
 import Image from "next/image";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
-import collective1 from "../../../public/images/collective-salon.png";
-import collective2 from "../../../public/images/collective-balcony.png";
-import collective3 from "../../../public/images/collective-cafe.png";
-import collective4 from "../../../public/images/collective-storefronts.png";
-import collective5 from "../../../public/images/collective-hair-dresser.png";
-import collective6 from "../../../public/images/collective-waiting-room.jpeg";
-import collective7 from "../../../public/images/collective-salon-room.jpeg";
-import collective8 from "../../../public/images/collective-beauty-chair.png";
-import collectiveT1 from "../../../public/images/collective-star-chair.webp";
-import collectiveT2 from "../../../public/images/collective-vanity-chair.webp";
+import collective1 from "../../../public/images/Carousel1.jpg";
+import collective2 from "../../../public/images/Carousel2.jpg";
+import collective3 from "../../../public/images/Carousel3.jpg";
+import collective4 from "../../../public/images/Carousel4.jpg";
+import collective5 from "../../../public/images/Carousel5.jpg";
+import collective6 from "../../../public/images/Carousel6.jpg";
+import collective7 from "../../../public/images/Carousel7.jpg";
+
 
 export default function Carousel() {
     const [current, setCurrent] = useState(0);
     const photos = [
-        {
-            image: collectiveT1,
-            alt: "collective",
-        },
-        {
-            image: collectiveT2,
-            alt: "collective",
-        },
         {
             image: collective1,
             alt: "collective",
@@ -53,10 +43,7 @@ export default function Carousel() {
             image: collective7,
             alt: "collective",
         },
-        {
-            image: collective8,
-            alt: "collective",
-        },
+
     ];
     const length = photos.length;
   
